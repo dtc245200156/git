@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Columns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Thuộc tính grid-template-columns</h1>
+
+    <h2>Ví dụ 1: 3 cột bằng nhau</h2>
+    <div class="grid grid-3">
+        <div>Column 1</div>
+        <div>Column 2</div>
+        <div>Column 3</div>
+        <div>Column 4</div>
+        <div>Column 5</div>
+        <div>Column 6</div>
+    </div>
+
+    <h2>Ví dụ 2: Cột có kích thước khác nhau</h2>
+    <div class="grid grid-custom">
+        <div>100px</div>
+        <div>200px</div>
+        <div>1fr</div>
+    </div>
+
+    <h2>Ví dụ 3: Sử dụng auto</h2>
+    <div class="grid grid-auto">
+        <div>Nội dung ngắn</div>
+        <div>Nội dung dài hơn</div>
+        <div>Nội dung</div>
+    </div>
+
+    <h2>Ví dụ 4: Sử dụng min-content</h2>
+    <div class="grid grid-min">
+        <div>Xin chào</div>
+        <div>HTML CSS</div>
+        <div>Grid</div>
+    </div>
+
+    <h2>Ví dụ 5: Sử dụng max-content</h2>
+    <div class="grid grid-max">
+        <div>Hello</div>
+        <div>Grid Template Columns</div>
+        <div>CSS</div>
+    </div>
+
+</body>
+</html>
