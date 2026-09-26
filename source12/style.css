@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+section {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    min-height: 160px;
+    padding: 10px;
+    gap: 10px;
+    border: 3px solid #333;
+    background-color: white;
+}
+
+.item {
+    flex: 0 0 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+}
+
+/* Sắp xếp theo hàng, không bọc */
+.row-nowrap {
+    flex-flow: row nowrap;
+}
+
+/* Sắp xếp theo hàng, cho phép bọc */
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+/* Sắp xếp theo hàng ngược, không bọc */
+.row-reverse-nowrap {
+    flex-flow: row-reverse nowrap;
+}
+
+/* Sắp xếp theo hàng ngược và cho phép bọc */
+.row-reverse-wrap {
+    flex-flow: row-reverse wrap;
+}
