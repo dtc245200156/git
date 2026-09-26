@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyBrand</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">Chào mừng đến với MyBrand</h1>
+            <p class="lead">Giải pháp số giúp doanh nghiệp phát triển và kết nối với khách hàng.</p>
+            <a href="#services" class="btn btn-light btn-lg">Khám phá ngay</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container py-5 text-center">
+            <h2 class="mb-3">Về chúng tôi</h2>
+            <p class="text-muted">
+                MyBrand cung cấp các giải pháp số đơn giản, hiệu quả và phù hợp với nhu cầu của doanh nghiệp.
+            </p>
+        </section>
+
+        <section id="services" class="container py-5">
+            <h2 class="text-center mb-4">Dịch vụ của chúng tôi</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h4">Thiết kế Web</h3>
+                            <p class="card-text">Dịch vụ thiết kế web chuyên nghiệp, hiện đại và thân thiện với người dùng.</p>
+                            <a href="#" class="btn btn-primary">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h4">SEO &amp; Marketing</h3>
+                            <p class="card-text">Nâng cao khả năng tiếp cận khách hàng và xây dựng thương hiệu trực tuyến.</p>
+                            <a href="#" class="btn btn-primary">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="h4">Hỗ trợ 24/7</h3>
+                            <p class="card-text">Đội ngũ hỗ trợ luôn sẵn sàng đồng hành và giải đáp các vấn đề của bạn.</p>
+                            <a href="#" class="btn btn-primary">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-light py-5 text-center">
+            <div class="container">
+                <h2>Liên hệ với chúng tôi</h2>
+                <p class="mb-3">Hãy bắt đầu dự án của bạn cùng MyBrand.</p>
+                <a href="mailto:contact@mybrand.example" class="btn btn-dark">Gửi email</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2024 MyBrand. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
