@@ -1,0 +1,249 @@
+body {
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    background: #ffffff;
+    padding: 0 15px 15px;
+}
+
+/* Header */
+header {
+    position: relative;
+    min-height: 220px;
+    background: linear-gradient(135deg, #222, #555);
+    overflow: hidden;
+}
+
+.header-inner {
+    min-height: 220px;
+    position: relative;
+}
+
+.shopping-mall {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    color: #fff;
+    font-variant: small-caps;
+    z-index: 2;
+}
+
+.shopping-mall > h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    color: #fff;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 4px #000;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #ccc;
+    margin: 0;
+}
+
+.shopping-mall > h5 {
+    margin-top: 7px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    color: #eee;
+}
+
+.header-object {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    height: 180px;
+    width: auto;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+.navbar .glyphicon {
+    margin-right: 4px;
+}
+
+/* Main */
+article {
+    min-height: 500px;
+}
+
+.page-header {
+    margin-top: 0;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+/* Products */
+.poly-prod {
+    text-align: center;
+    padding: 5px;
+}
+
+.poly-prod .panel {
+    margin-bottom: 10px;
+    height: 235px;
+}
+
+.poly-prod .panel-heading {
+    min-height: 44px;
+}
+
+.poly-prod .panel-body {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poly-prod .panel-body img {
+    height: 150px;
+    max-width: 95%;
+    object-fit: contain;
+}
+
+.poly-prod .panel-footer {
+    font-size: 16px;
+}
+
+/* Cart */
+.poly-cart {
+    margin-top: 5px;
+}
+
+.poly-cart ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+.poly-cart .panel-heading strong {
+    font-variant: small-caps;
+    font-size: larger;
+    text-shadow: 0 0 2px darkgray;
+}
+
+.cart-image {
+    height: 75px;
+    object-fit: contain;
+    padding: 0;
+}
+
+/* Sidebar */
+aside .panel-heading strong {
+    font-variant: small-caps;
+}
+
+aside .panel {
+    margin-bottom: 15px;
+}
+
+.list-group-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Footer */
+footer {
+    margin-top: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+    header,
+    .header-inner {
+        min-height: 185px;
+    }
+
+    .shopping-mall {
+        left: 20px;
+        right: 20px;
+        bottom: 18px;
+    }
+
+    .shopping-mall > h1 {
+        font-size: 34px;
+    }
+
+    .shopping-mall > h5 {
+        font-size: 13px;
+    }
+
+    article {
+        min-height: 0;
+    }
+
+    .poly-prod .panel {
+        height: 225px;
+    }
+
+    .poly-prod .panel-body {
+        height: 140px;
+    }
+
+    .poly-prod .panel-body img {
+        height: 130px;
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background: #fff;
+    }
+
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .shopping-mall > h1 {
+        font-size: 27px;
+    }
+
+    .shopping-mall > h5 {
+        font-size: 11px;
+    }
+
+    .poly-prod {
+        padding: 3px;
+    }
+
+    .poly-prod .panel-heading {
+        min-height: 48px;
+        padding: 10px 5px;
+    }
+
+    .poly-prod .panel-title {
+        font-size: 13px;
+    }
+
+    .poly-prod .panel {
+        height: 205px;
+    }
+
+    .poly-prod .panel-body {
+        height: 125px;
+    }
+
+    .poly-prod .panel-body img {
+        height: 110px;
+    }
+}
