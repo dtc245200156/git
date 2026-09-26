@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+
+        <!-- Carousel giới thiệu lợi ích -->
+        <div id="benefitsCarousel" class="carousel slide mb-5 shadow rounded overflow-hidden"
+             data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Lợi ích 1"></button>
+                <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="1"
+                        aria-label="Lợi ích 2"></button>
+                <button type="button" data-bs-target="#benefitsCarousel" data-bs-slide-to="2"
+                        aria-label="Lợi ích 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/1400/500?random=41"
+                         class="d-block w-100"
+                         alt="Hình ảnh giới thiệu dịch vụ">
+                    <div class="carousel-caption d-block">
+                        <div class="bg-dark bg-opacity-50 rounded p-3">
+                            <h2 class="fw-bold">Trải nghiệm dịch vụ hiện đại</h2>
+                            <p class="mb-0">Đăng ký tài khoản để khám phá đầy đủ các tính năng.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1400/500?random=42"
+                         class="d-block w-100"
+                         alt="Hình ảnh minh họa lợi ích dịch vụ">
+                    <div class="carousel-caption d-block">
+                        <div class="bg-dark bg-opacity-50 rounded p-3">
+                            <h2 class="fw-bold">Quản lý dễ dàng</h2>
+                            <p class="mb-0">Tất cả thông tin được tổ chức rõ ràng và thuận tiện.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/1400/500?random=43"
+                         class="d-block w-100"
+                         alt="Hình ảnh minh họa hỗ trợ khách hàng">
+                    <div class="carousel-caption d-block">
+                        <div class="bg-dark bg-opacity-50 rounded p-3">
+                            <h2 class="fw-bold">Hỗ trợ tận tâm</h2>
+                            <p class="mb-0">Đội ngũ hỗ trợ sẵn sàng đồng hành cùng bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button"
+                    data-bs-target="#benefitsCarousel" data-bs-slide="prev"
+                    aria-label="Slide trước">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button"
+                    data-bs-target="#benefitsCarousel" data-bs-slide="next"
+                    aria-label="Slide tiếp theo">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Form đăng ký -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-7">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4 p-md-5">
+
+                        <h1 class="text-center mb-2">Đăng Ký Tài Khoản</h1>
+                        <p class="text-center text-muted mb-4">
+                            Tạo tài khoản để bắt đầu sử dụng dịch vụ
+                        </p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Họ và tên</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">&#128100;</span>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="fullName"
+                                           placeholder="Nhập họ và tên"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">&#9993;</span>
+                                    <input type="email"
+                                           class="form-control"
+                                           id="email"
+                                           placeholder="name@example.com"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Mật khẩu</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">&#128274;</span>
+                                    <input type="password"
+                                           class="form-control"
+                                           id="password"
+                                           placeholder="Nhập mật khẩu"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="confirmPassword" class="form-label">Xác nhận mật khẩu</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">&#128273;</span>
+                                    <input type="password"
+                                           class="form-control"
+                                           id="confirmPassword"
+                                           placeholder="Nhập lại mật khẩu"
+                                           required>
+                                </div>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Đăng ký
+                                </button>
+                            </div>
+                        </form>
+
+                        <p class="text-center text-muted mt-4 mb-0">
+                            Bằng việc đăng ký, bạn đồng ý với các điều khoản sử dụng.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
