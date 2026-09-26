@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #3498db;
+    color: white;
+    border: 2px solid #2980b9;
+    text-align: center;
+}
+
+/*
+    grid-row: grid-row-start / grid-row-end
+*/
+
+/* Bắt đầu từ hàng 1 và kết thúc trước hàng 3 */
+.item2 {
+    grid-row: 1 / 3;
+}
+
+/* Bắt đầu từ hàng 3 và kết thúc trước hàng 5 */
+.item5 {
+    grid-row: 3 / 5;
+}
+
+/* Các item còn lại đặt theo luồng thông thường */
+.item1,
+.item3,
+.item4,
+.item6,
+.item7,
+.item8 {
+    grid-row: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .item2,
+    .item5 {
+        grid-row: auto;
+    }
+}
