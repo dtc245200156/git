@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="200" viewBox="0 0 360 200">
+  <rect width="360" height="200" fill="none"/>
+  <g fill="#ffffff" opacity="0.95">
+    <rect x="35" y="55" width="170" height="105" rx="8"/>
+    <rect x="55" y="75" width="130" height="55" rx="4" fill="#333333"/>
+    <rect x="85" y="140" width="70" height="8" rx="4" fill="#333333"/>
+    <circle cx="258" cy="90" r="48"/>
+    <path d="M226 135h64v28h-64z"/>
+  </g>
+  <g fill="#222222">
+    <circle cx="258" cy="80" r="7"/>
+    <path d="M240 100c7-18 29-18 36 0z"/>
+  </g>
+  <text x="18" y="188" fill="#ffffff" font-family="Arial, sans-serif" font-size="15">ONLINE SHOPPING</text>
+</svg>
