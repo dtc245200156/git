@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Ảnh đại diện tạm thời</title>
+  <desc id="desc">Hình minh họa dùng làm ảnh thay thế. Hãy thay bằng ảnh cá nhân trước khi nộp bài.</desc>
+  <rect width="600" height="400" fill="#eeeeee"/>
+  <circle cx="300" cy="150" r="70" fill="#bbbbbb"/>
+  <path d="M170 340c15-75 65-110 130-110s115 35 130 110" fill="#bbbbbb"/>
+  <text x="300" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#555555">THAY BẰNG ẢNH CÁ NHÂN</text>
+</svg>
