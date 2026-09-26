@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS flex-grow</h1>
+
+    <p>
+        Thuộc tính <strong>flex-grow</strong> xác định khả năng phát triển
+        của một flex item so với các flex item khác trong cùng container.
+    </p>
+
+    <section>
+        <h2>1. flex-grow: 1 trên Item 2</h2>
+
+        <div class="flex-container">
+            <div class="item">Item 1</div>
+            <div class="item grow-1">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. flex-grow: 2 trên Item 2</h2>
+
+        <div class="flex-container">
+            <div class="item">Item 1</div>
+            <div class="item grow-2">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Nhiều item cùng sử dụng flex-grow</h2>
+
+        <div class="flex-container">
+            <div class="item grow-1">Item 1</div>
+            <div class="item grow-2">Item 2</div>
+            <div class="item grow-1">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. flex-grow: initial</h2>
+
+        <div class="flex-container">
+            <div class="item">Item 1</div>
+            <div class="item grow-initial">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. flex-grow: inherit</h2>
+
+        <div class="parent">
+            <div class="flex-container">
+                <div class="item">Item 1</div>
+                <div class="item grow-inherit">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
