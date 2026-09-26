@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.item {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3498db;
+    color: white;
+    border: 2px solid #2980b9;
+    text-align: center;
+}
+
+/* Giá trị auto */
+.item1 {
+    grid-column-start: auto;
+}
+
+/* Bắt đầu từ cột số 2 */
+.item2 {
+    grid-column-start: 2;
+}
+
+/* Bắt đầu từ cột số 3 */
+.item3 {
+    grid-column-start: 3;
+}
+
+/* Kéo dài 2 cột */
+.item4 {
+    grid-column-start: span 2;
+}
+
+/* Kéo dài 3 cột */
+.item5 {
+    grid-column-start: span 3;
+}
+
+/* Bắt đầu từ cột số 1 */
+.item6 {
+    grid-column-start: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6 {
+        grid-column-start: auto;
+    }
+}
