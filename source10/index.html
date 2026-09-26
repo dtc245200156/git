@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Basis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS flex-basis</h1>
+
+    <p>
+        Thuộc tính <strong>flex-basis</strong> xác định kích thước ban đầu
+        của một flex item.
+    </p>
+
+    <section>
+        <h2>1. flex-basis: 150px</h2>
+        <div class="flex-container">
+            <div class="item basis-150">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. flex-basis: 250px</h2>
+        <div class="flex-container">
+            <div class="item basis-250">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. flex-basis: auto</h2>
+        <div class="flex-container">
+            <div class="item basis-auto">Item 1 có nội dung dài hơn</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. flex-basis: initial</h2>
+        <div class="flex-container">
+            <div class="item basis-initial">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. flex-basis: inherit</h2>
+        <div class="parent">
+            <div class="flex-container">
+                <div class="item basis-inherit">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
