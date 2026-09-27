@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as vars;
 @use "../abstracts/mixins" as mixins;
+@use "../abstracts/functions" as fn;
 
 .page {
   position: relative;
@@ -59,7 +60,7 @@
   }
 
   &--quarter {
-    width: mixins.fn.column-width(3);
+    width: fn.column-width(3);
   }
 
   &--purple {
@@ -85,7 +86,7 @@
   }
 
   &--overlay {
-    @include mixins.solid-box(vars.$white, 0 1px 0 0 solid vars.$black);
+    @include mixins.solid-box(vars.$white);
     border-right: 1px solid vars.$black;
 
     &:first-child {
