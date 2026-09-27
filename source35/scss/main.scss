@@ -1,0 +1,62 @@
+@use "abstracts/variables" as vars;
+@use "abstracts/mixins";
+@use "base/typography";
+@use "components/buttons";
+@use "components/cards";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: vars.$text-color;
+  background: vars.$background-color;
+}
+
+.container {
+  width: min(88%, 1100px);
+  margin: 0 auto;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 28px 0;
+}
+
+.info {
+  padding: 24px;
+  margin-bottom: 56px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: vars.$card-radius;
+
+  p {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+}
