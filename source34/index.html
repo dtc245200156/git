@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASS Architecture Practice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">SASS PRACTICE</p>
+      <h1>CSS chuyển đổi sang SASS chuẩn</h1>
+      <p class="hero__text">
+        Ví dụ sử dụng variables, mixins, nesting và partials theo cấu trúc thư mục rõ ràng.
+      </p>
+    </header>
+
+    <section class="demo">
+      <article class="card">
+        <div class="card__content">
+          <h2 class="card__title">SASS Card</h2>
+          <p class="card__text">
+            Các giá trị màu, khoảng cách và box-shadow được quản lý bằng biến.
+          </p>
+          <a class="button" href="#demo">Xem ví dụ</a>
+        </div>
+      </article>
+
+      <article class="card card--accent" id="demo">
+        <div class="card__content">
+          <h2 class="card__title">Reusable Mixin</h2>
+          <p class="card__text">
+            Mixin giúp tái sử dụng style cho button và hiệu ứng đổ bóng.
+          </p>
+          <button class="button button--dark" type="button">Button mẫu</button>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
