@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Development Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li class="logo">
+                <img src="images/logo.svg" alt="Web Development">
+            </li>
+            <li><a href="#web">Web Technology</a></li>
+            <li><a href="#program">C Programming</a></li>
+            <li><a href="#course">Courses</a></li>
+        </ul>
+
+        <div class="right-nav">
+            <input type="text" name="search" id="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+            <button class="btn btn-sm" type="button">Search</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="first-section">
+            <div class="box-main">
+                <div class="first-half">
+                    <h1 class="text-big" id="web">Web Technology</h1>
+                    <p class="text-small">
+                        HTML là ngôn ngữ đánh dấu được sử dụng để xây dựng cấu trúc của
+                        trang web. HTML giúp trình duyệt hiểu cách hiển thị văn bản, hình ảnh,
+                        liên kết và nhiều nội dung khác theo một cấu trúc rõ ràng.
+                    </p>
+                    <div class="section-actions">
+                        <a href="#course" class="btn">Khám phá khóa học</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-section">
+            <div class="box-main">
+                <div class="second-half">
+                    <h1 class="text-big" id="program">C Programming</h1>
+                    <p class="text-small">
+                        C là ngôn ngữ lập trình thủ tục được sử dụng rộng rãi trong lập trình
+                        hệ thống. C cung cấp khả năng truy cập bộ nhớ ở mức thấp, cú pháp gọn
+                        và phù hợp cho việc xây dựng hệ điều hành, trình biên dịch và nhiều
+                        chương trình hiệu năng cao.
+                    </p>
+                    <div class="section-actions">
+                        <a href="#course" class="btn">Xem nội dung</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="paras">
+                <h1 class="section-tag text-big">Java</h1>
+                <p class="section-sub-tag text-small">
+                    Java là một ngôn ngữ lập trình hướng đối tượng phổ biến. Mã Java thường
+                    được biên dịch thành bytecode và chạy trên Java Virtual Machine (JVM),
+                    giúp chương trình có thể hoạt động trên nhiều kiến trúc khác nhau.
+                </p>
+            </div>
+
+            <div class="thumbnail">
+                <img src="images/laptop.svg" alt="Hình minh họa laptop và lập trình">
+            </div>
+        </section>
+
+        <section id="course" class="courses">
+            <div class="course-card">
+                <h2>HTML & CSS</h2>
+                <p>Học cách tạo cấu trúc và định dạng giao diện web.</p>
+            </div>
+            <div class="course-card">
+                <h2>C Programming</h2>
+                <p>Làm quen với biến, hàm, mảng và tư duy lập trình.</p>
+            </div>
+            <div class="course-card">
+                <h2>Java</h2>
+                <p>Tìm hiểu lập trình hướng đối tượng và JVM.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright © 2026 - All rights reserved
+        </p>
+    </footer>
+
+</body>
+</html>
