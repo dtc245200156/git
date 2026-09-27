@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASS Mixins & Variables Practice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <p class="eyebrow">SASS REUSABILITY</p>
+      <h1>Tối ưu CSS bằng Variables & Mixins</h1>
+      <p class="hero__text">
+        Thay đổi giao diện từ một nơi bằng biến, đồng thời tái sử dụng style với mixins.
+      </p>
+    </header>
+
+    <section class="showcase">
+      <article class="card">
+        <span class="card__tag">Typography</span>
+        <h2>Heading cấp 2</h2>
+        <p>Font size và màu chữ được kiểm soát bằng variables.</p>
+      </article>
+
+      <article class="card">
+        <span class="card__tag">Component</span>
+        <h2>Card tái sử dụng</h2>
+        <p>Toàn bộ box style được gom vào một mixin.</p>
+      </article>
+    </section>
+
+    <section class="actions">
+      <a class="button" href="#cards">Button đỏ</a>
+      <button class="button button--secondary" type="button">Button phụ</button>
+    </section>
+
+    <section class="info" id="cards">
+      <h2>Tại sao dùng SASS?</h2>
+      <p>
+        Khi cần đổi màu, cỡ chữ, padding hoặc box-shadow, chỉ cần cập nhật variable
+        thay vì sửa từng selector.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
