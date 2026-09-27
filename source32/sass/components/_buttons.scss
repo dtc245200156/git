@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: $primary-color;
+  color: $white-color;
+  text-decoration: none;
+  font-weight: 700;
+  @include transition(transform, background);
+
+  &:hover {
+    transform: translateY(-2px);
+    background: #1d4ed8;
+  }
+
+  &--light {
+    background: $white-color;
+    color: $secondary-color;
+  }
+}
