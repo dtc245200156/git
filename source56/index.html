@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Research Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="survey-wrap">
+    <section class="survey-card">
+      <header class="survey-header">
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+      </header>
+
+      <form action="#" method="post">
+        <div class="field">
+          <label for="age">What is your age range?</label>
+          <select id="age" name="age" required>
+            <option value="">Select</option>
+            <option value="under18">Under 18</option>
+            <option value="18-24">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-44">35 - 44</option>
+            <option value="45-54">45 - 54</option>
+            <option value="55-64">55 - 64</option>
+            <option value="65plus">65 or older</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="income">What is your yearly income range?</label>
+          <select id="income" name="income" required>
+            <option value="">Select</option>
+            <option value="under25">Under $25,000</option>
+            <option value="25-49">$25,000 - $49,999</option>
+            <option value="50-74">$50,000 - $74,999</option>
+            <option value="75-99">$75,000 - $99,999</option>
+            <option value="100-149">$100,000 - $149,999</option>
+            <option value="150plus">$150,000 or more</option>
+          </select>
+        </div>
+
+        <fieldset class="field">
+          <legend>Gender Identity</legend>
+          <div class="option-stack">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="nonbinary"> Nonbinary</label>
+            <label class="other-option">
+              <input type="radio" name="gender" value="other"> Other
+              <input type="text" name="genderOther" maxlength="250" placeholder="Please specify">
+            </label>
+          </div>
+          <small>Maximum of 250 characters.</small>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Which of the following products have your purchased in the last 2 months. Please check all that apply.</legend>
+          <div class="option-stack">
+            <label><input type="checkbox" name="products" value="product1"> Product 1</label>
+            <label><input type="checkbox" name="products" value="product2"> Product 2</label>
+            <label><input type="checkbox" name="products" value="product3"> Product 3</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>How often would you use our new product?</legend>
+          <div class="option-row">
+            <label><input type="radio" name="frequency" value="daily"> Daily</label>
+            <label><input type="radio" name="frequency" value="weekly"> Weekly</label>
+            <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label for="dollars">What would you pay for the new product?</label>
+          <div class="price-input">
+            <span>$</span>
+            <input id="dollars" type="number" name="dollars" min="0" placeholder="Dollars">
+            <span class="dot">.</span>
+            <input type="number" name="cents" min="0" max="99" placeholder="Cents">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="features">What features would you like to see in the new product.</label>
+          <textarea id="features" name="features" rows="5" maxlength="1000" placeholder="Tell us what would be useful to you..."></textarea>
+        </div>
+
+        <fieldset class="field matrix-field">
+          <legend>Please rate your level of agreement with the following statements.</legend>
+          <div class="matrix-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Statement</th>
+                  <th scope="col">Strongly Disagree</th>
+                  <th scope="col">Disagree</th>
+                  <th scope="col">Agree</th>
+                  <th scope="col">Strongly Agree</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Our products are priced fairly.</th>
+                  <td><input type="radio" name="ratingPrice" value="1" aria-label="Strongly Disagree"></td>
+                  <td><input type="radio" name="ratingPrice" value="2" aria-label="Disagree"></td>
+                  <td><input type="radio" name="ratingPrice" value="3" aria-label="Agree"></td>
+                  <td><input type="radio" name="ratingPrice" value="4" aria-label="Strongly Agree"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Our products are high quality.</th>
+                  <td><input type="radio" name="ratingQuality" value="1" aria-label="Strongly Disagree"></td>
+                  <td><input type="radio" name="ratingQuality" value="2" aria-label="Disagree"></td>
+                  <td><input type="radio" name="ratingQuality" value="3" aria-label="Agree"></td>
+                  <td><input type="radio" name="ratingQuality" value="4" aria-label="Strongly Agree"></td>
+                </tr>
+                <tr>
+                  <th scope="row">You would recommend our product to a friend or coworker.</th>
+                  <td><input type="radio" name="ratingRecommend" value="1" aria-label="Strongly Disagree"></td>
+                  <td><input type="radio" name="ratingRecommend" value="2" aria-label="Disagree"></td>
+                  <td><input type="radio" name="ratingRecommend" value="3" aria-label="Agree"></td>
+                  <td><input type="radio" name="ratingRecommend" value="4" aria-label="Strongly Agree"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </fieldset>
+
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+
+      <footer class="survey-footer">
+        <span>Market Research Survey</span>
+        <span>Powered by Wufoo-style practice layout</span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
