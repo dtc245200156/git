@@ -1,0 +1,48 @@
+.section {
+  padding: $section-padding 0;
+
+  &--about {
+    background: $white-color;
+  }
+
+  &__heading {
+    max-width: 760px;
+    margin: 0 auto spacing(4);
+    text-align: center;
+
+    &--light {
+      color: $white-color;
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    margin-bottom: spacing(1);
+    color: $primary-color;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.1;
+    margin-bottom: spacing(2);
+  }
+
+  p {
+    color: $muted-color;
+  }
+
+  &--features {
+    background: $secondary-color;
+
+    .section__tag {
+      color: #67e8f9;
+    }
+  }
+}
+
+.about-card {
+  min-height: 180px;
+}
