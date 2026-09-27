@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="420" viewBox="0 0 600 420">
+  <rect x="120" y="45" width="360" height="245" rx="18" fill="#202124"/>
+  <rect x="145" y="70" width="310" height="195" rx="8" fill="#93c5fd"/>
+  <text x="300" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#111">HTML &amp; CSS</text>
+  <text x="300" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#111">&lt;code&gt; learn(); &lt;/code&gt;</text>
+  <path d="M70 310h460l42 45H28z" fill="#444"/>
+  <rect x="250" y="325" width="100" height="10" rx="5" fill="#777"/>
+  <circle cx="300" cy="65" r="4" fill="#fff"/>
+</svg>
