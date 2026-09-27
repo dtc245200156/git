@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Ảnh đại diện minh họa</title>
+  <desc id="desc">Hình đại diện minh họa với chữ N A.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9f1dc"/>
+      <stop offset="1" stop-color="#75b77d"/>
+    </linearGradient>
+  </defs>
+  <circle cx="150" cy="150" r="150" fill="url(#bg)"/>
+  <circle cx="150" cy="108" r="54" fill="#2e7d32" opacity=".92"/>
+  <path d="M68 256c11-55 40-82 82-82s71 27 82 82z" fill="#2e7d32" opacity=".92"/>
+  <text x="150" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="white">N A</text>
+</svg>
