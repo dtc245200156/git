@@ -1,0 +1,116 @@
+/* Element selector */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #eef4fb;
+    color: #1f2937;
+}
+
+/* Grouping selector */
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+/* ID selector */
+#page-title {
+    text-align: center;
+    color: #1d4ed8;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* Class selector */
+.container {
+    width: min(100% - 32px, 760px);
+    margin: 0 auto;
+    padding: 56px 0;
+    text-align: center;
+}
+
+.intro {
+    max-width: 640px;
+    margin: 0 auto 28px;
+    color: #5b6472;
+    line-height: 1.8;
+}
+
+.hobby-section {
+    margin: 0 auto 28px;
+    padding: 24px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #d8e2ef;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(31, 41, 55, 0.07);
+}
+
+.hobby-section h2 {
+    color: #111827;
+    margin-bottom: 14px;
+}
+
+.hobby-list {
+    margin: 0;
+    padding-left: 28px;
+}
+
+.hobby-list li {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Different colors for list items */
+.hobby-list li:nth-child(1) {
+    color: #dc2626;
+}
+
+.hobby-list li:nth-child(2) {
+    color: #ca8a04;
+}
+
+.hobby-list li:nth-child(3) {
+    color: #16a34a;
+}
+
+.action-button {
+    min-width: 160px;
+    min-height: 48px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+/* Pseudo-class selector */
+.action-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.22);
+}
+
+.action-button:active {
+    transform: translateY(0);
+}
+
+.action-button:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+    .container {
+        width: min(100% - 20px, 760px);
+        padding: 36px 0;
+    }
+
+    .hobby-section {
+        padding: 20px;
+    }
+}
