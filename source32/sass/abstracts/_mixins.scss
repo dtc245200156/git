@@ -1,0 +1,14 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+@mixin transition($property: all) {
+  transition: $property 0.25s ease;
+}
