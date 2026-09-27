@@ -1,2 +1,69 @@
-<!doctype html>
-<html lang="vi"><head><meta charset="UTF-8"><title>SASS</title></head><body><h1>Landing Page</h1></body></html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Web Design - SASS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+<div class="nav-container">
+<a class="brand" href="#home">Creative<span>.</span></a>
+<ul class="navbar__list">
+<li><a href="#home">Trang chủ</a></li>
+<li><a href="#services">Dịch vụ</a></li>
+<li><a href="#stats">Số liệu</a></li>
+<li><a href="#about">Giới thiệu</a></li>
+<li><a href="#contact">Liên hệ</a></li>
+</ul>
+</div>
+</nav>
+
+<header class="header" id="home">
+<div class="header__content">
+<span class="eyebrow">WEB STUDIO</span>
+<h1>Creative Web Design</h1>
+<p>Thiết kế website chuyên nghiệp, hiện đại và ấn tượng.</p>
+<a href="#services" class="btn">Khám phá ngay</a>
+</div>
+</header>
+
+<main>
+<section class="content" id="services">
+<div class="section-heading">
+<span class="section-kicker">DỊCH VỤ</span>
+<h2>Dịch vụ nổi bật</h2>
+<p>Giải pháp số giúp thương hiệu nổi bật trên Internet.</p>
+</div>
+<div class="card-container">
+<article class="card"><div class="card__visual"></div><div class="card__body"><h3>Thiết kế Website</h3><p>Website responsive, rõ ràng và thân thiện với người dùng.</p></div></article>
+<article class="card"><div class="card__visual"></div><div class="card__body"><h3>SEO &amp; Marketing</h3><p>Tăng khả năng tiếp cận khách hàng qua công cụ tìm kiếm.</p></div></article>
+<article class="card"><div class="card__visual"></div><div class="card__body"><h3>Hỗ trợ 24/7</h3><p>Đồng hành và hỗ trợ nhanh chóng trong quá trình sử dụng.</p></div></article>
+</div>
+</section>
+
+<section class="stats" id="stats">
+<div class="stats__item"><strong>03</strong><span>Dịch vụ chính</span></div>
+<div class="stats__item"><strong>24/7</strong><span>Hỗ trợ</span></div>
+<div class="stats__item"><strong>100%</strong><span>Responsive</span></div>
+<div class="stats__item"><strong>01</strong><span>Landing page</span></div>
+</section>
+
+<section class="about" id="about">
+<div class="about__text">
+<span class="section-kicker">GIỚI THIỆU</span>
+<h2>Thiết kế trải nghiệm, không chỉ giao diện.</h2>
+<p>SASS giúp tổ chức lại CSS bằng variables, mixins và nesting để dễ bảo trì và tái sử dụng.</p>
+<div class="about-points"><span>Responsive</span><span>Tái sử dụng</span><span>Dễ bảo trì</span></div>
+</div>
+<div class="about__visual"></div>
+</section>
+</main>
+
+<footer class="footer" id="contact">
+<div><h2>Creative Web</h2><p>© 2026 Creative Web.</p></div>
+<div><h2>Kết nối</h2><p>Facebook • Twitter • LinkedIn</p></div>
+</footer>
+</body>
+</html>
