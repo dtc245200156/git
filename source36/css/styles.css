@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.page {
+  position: relative;
+  padding: 16px 10px 24px 8px;
+}
+
+.gridcontainer {
+  width: 100%;
+}
+.gridcontainer--foreground {
+  position: relative;
+  z-index: 2;
+  opacity: 0.9;
+}
+.gridcontainer--overlay {
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  right: 10px;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.gridwrapper {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+}
+.gridwrapper--header {
+  height: 90px;
+}
+.gridwrapper--content {
+  height: 230px;
+}
+.gridwrapper--footer {
+  height: 50px;
+}
+.gridwrapper--overlay {
+  height: 370px;
+}
+
+.gridcontent {
+  width: 8.3333333333%;
+  margin: 0;
+  float: left;
+  height: 100%;
+  border-right: 1px solid grey;
+  background-color: #f1f1f1;
+}
+.gridcontent--full {
+  width: 100%;
+  border-right: 1px solid grey;
+}
+.gridcontent--quarter {
+  width: 25%;
+}
+.gridcontent--purple {
+  background-color: #9933cc;
+  border-right-color: transparent;
+}
+.gridcontent--blue {
+  background-color: #0099cc;
+  border-right-color: transparent;
+}
+.gridcontent--white {
+  background-color: #fff;
+  border: none;
+}
+.gridcontent--menu,
+.gridcontent--sidebar {
+  padding-top: 15px;
+}
+.gridcontent--overlay {
+  background-color: #fff;
+  border: none;
+  border-right: 1px solid #000;
+}
+.gridcontent--overlay:first-child {
+  border-left: 1px solid #000;
+}
+
+.gridcontent--menu .menu-block {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #33b5e5;
+}
+.gridcontent--menu .menu-block:last-child {
+  margin-bottom: 0;
+}
+
+.gridcontent--sidebar .sidebar-block {
+  width: 100%;
+  height: 92%;
+  margin-bottom: 0;
+  border: none;
+  background-color: #33b5e5;
+}
+
+.instruction {
+  position: relative;
+  z-index: 3;
+  margin: 16px 0 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
