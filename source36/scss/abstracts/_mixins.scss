@@ -1,0 +1,29 @@
+@use "variables" as vars;
+@use "functions" as fn;
+
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin grid-column($span: 1) {
+  width: fn.column-width($span);
+  margin: 0;
+  float: left;
+}
+
+@mixin transparent-right-border {
+  border-right-color: transparent;
+}
+
+@mixin solid-box($background, $border: none) {
+  background-color: $background;
+  border: $border;
+}
+
+@mixin content-block($height: auto, $margin-bottom: 0) {
+  width: 100%;
+  height: $height;
+  margin-bottom: $margin-bottom;
+  border: none;
+  background-color: vars.$cyan;
+}
