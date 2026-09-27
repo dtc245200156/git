@@ -1,0 +1,95 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mixins;
+
+.page {
+  position: relative;
+  padding: 16px vars.$page-inset-right 24px vars.$page-inset-left;
+}
+
+.gridcontainer {
+  width: 100%;
+
+  &--foreground {
+    position: relative;
+    z-index: 2;
+    opacity: 0.9;
+  }
+
+  &--overlay {
+    position: absolute;
+    top: 16px;
+    left: vars.$page-inset-left;
+    right: vars.$page-inset-right;
+    z-index: 1;
+    opacity: 0.1;
+  }
+}
+
+.gridwrapper {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+
+  &--header {
+    height: vars.$grid-height-header;
+  }
+
+  &--content {
+    height: vars.$grid-height-content;
+  }
+
+  &--footer {
+    height: vars.$grid-height-footer;
+  }
+
+  &--overlay {
+    height: vars.$grid-height-overlay;
+  }
+}
+
+.gridcontent {
+  @include mixins.grid-column;
+  height: 100%;
+  border-right: 1px solid vars.$grey;
+  background-color: #f1f1f1;
+
+  &--full {
+    @include mixins.full-width;
+    border-right: 1px solid vars.$grey;
+  }
+
+  &--quarter {
+    width: mixins.fn.column-width(3);
+  }
+
+  &--purple {
+    background-color: vars.$purple;
+    @include mixins.transparent-right-border;
+  }
+
+  &--blue {
+    background-color: vars.$blue;
+    @include mixins.transparent-right-border;
+  }
+
+  &--white {
+    @include mixins.solid-box(vars.$white);
+  }
+
+  &--menu {
+    padding-top: 15px;
+  }
+
+  &--sidebar {
+    padding-top: 15px;
+  }
+
+  &--overlay {
+    @include mixins.solid-box(vars.$white, 0 1px 0 0 solid vars.$black);
+    border-right: 1px solid vars.$black;
+
+    &:first-child {
+      border-left: 1px solid vars.$black;
+    }
+  }
+}
