@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ba cách nhúng CSS</title>
+
+    <style>
+        .internal-title {
+            color: #16a34a;
+        }
+
+        .internal-text {
+            color: #15803d;
+        }
+
+        .demo {
+            margin-bottom: 28px;
+            padding: 24px;
+            border: 1px solid #d9e1ea;
+            border-radius: 12px;
+            background: #ffffff;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Ba cách nhúng CSS vào trang web</h1>
+
+        <section class="demo inline-demo">
+            <h2 style="color: #2563eb;">Phần 1: Inline-style</h2>
+            <p style="color: #1d4ed8;">
+                Văn bản này được đổi màu bằng thuộc tính <strong>style</strong> trực tiếp trên phần tử HTML.
+            </p>
+        </section>
+
+        <section class="demo">
+            <h2 class="internal-title">Phần 2: Internal-style</h2>
+            <p class="internal-text">
+                Văn bản này được đổi màu bằng CSS đặt trong thẻ <strong>&lt;style&gt;</strong> bên trong file HTML.
+            </p>
+        </section>
+
+        <section class="demo external-demo">
+            <h2>Phần 3: External-style</h2>
+            <p>
+                Văn bản này được đổi màu bằng CSS từ file <strong>style.css</strong> bên ngoài HTML.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
