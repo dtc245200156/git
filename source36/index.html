@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid - SASS</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="gridcontainer gridcontainer--foreground">
+      <div class="gridwrapper gridwrapper--header">
+        <div class="gridcontent gridcontent--full gridcontent--purple"></div>
+      </div>
+
+      <div class="gridwrapper gridwrapper--content">
+        <div class="gridcontent gridcontent--quarter gridcontent--menu">
+          <div class="menu-block"></div>
+          <div class="menu-block"></div>
+          <div class="menu-block"></div>
+          <div class="menu-block"></div>
+        </div>
+
+        <div class="gridcontent gridcontent--white"></div>
+        <div class="gridcontent gridcontent--white"></div>
+        <div class="gridcontent gridcontent--white"></div>
+        <div class="gridcontent gridcontent--white"></div>
+        <div class="gridcontent gridcontent--white"></div>
+        <div class="gridcontent gridcontent--white"></div>
+
+        <div class="gridcontent gridcontent--quarter gridcontent--sidebar">
+          <div class="sidebar-block"></div>
+        </div>
+      </div>
+
+      <div class="gridwrapper gridwrapper--footer">
+        <div class="gridcontent gridcontent--full gridcontent--blue"></div>
+      </div>
+    </section>
+
+    <section class="gridcontainer gridcontainer--overlay" aria-hidden="true">
+      <div class="gridwrapper gridwrapper--overlay">
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+        <div class="gridcontent gridcontent--overlay"></div>
+      </div>
+    </section>
+
+    <p class="instruction">
+      Resize the browser window to see that this grid responds to resizing and always uses
+      100% of the available space.
+    </p>
+  </main>
+</body>
+</html>
