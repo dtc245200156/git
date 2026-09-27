@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sass Architecture Practice</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a class="header__brand" href="#">SASS<span>.</span></a>
+                <ul class="header__menu">
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#features">Tính năng</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="home-banner" id="home">
+                <div class="home-banner__content">
+                    <span class="home-banner__tag">SASS ARCHITECTURE</span>
+                    <h1>Tổ chức SCSS sạch, rõ ràng và dễ bảo trì</h1>
+                    <p>
+                        Trang thực hành minh họa cách chia Sass thành variables, mixins,
+                        layout, components, pages, themes và vendors.
+                    </p>
+                    <a class="button" href="#features">Khám phá cấu trúc</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--about" id="about">
+            <div class="container">
+                <div class="section__heading">
+                    <span class="section__tag">GIỚI THIỆU</span>
+                    <h2>Chia nhỏ code để phát triển dự án dễ dàng hơn.</h2>
+                    <p>
+                        Sass cho phép tách phần cấu hình, bố cục, component và page-specific
+                        styles thành các file riêng, sau đó gộp lại thông qua file chính.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <span class="about-card__number">01</span>
+                        <h3>Abstracts</h3>
+                        <p>Biến, mixin và function được tái sử dụng trong toàn bộ dự án.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <span class="about-card__number">02</span>
+                        <h3>Base</h3>
+                        <p>Thiết lập reset, typography và các quy tắc global dùng chung.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <span class="about-card__number">03</span>
+                        <h3>Layout</h3>
+                        <p>Quản lý header, footer và grid của toàn bộ giao diện.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--features" id="features">
+            <div class="container">
+                <div class="section__heading section__heading--light">
+                    <span class="section__tag">CẤU TRÚC</span>
+                    <h2>Bảy khu vực chính của dự án Sass</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Abstracts</h3>
+                        <p>Variables, mixins, functions.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Base</h3>
+                        <p>Reset, typography, global rules.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Layout</h3>
+                        <p>Header, footer, grid.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Components</h3>
+                        <p>Buttons, cards and reusable UI.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Pages</h3>
+                        <p>Styles specific to each page.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Themes</h3>
+                        <p>Light and dark visual themes.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Vendors</h3>
+                        <p>Third-party styles and overrides.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--workflow">
+            <div class="container">
+                <div class="workflow">
+                    <div class="workflow__content">
+                        <span class="section__tag">MAIN.SCSS</span>
+                        <h2>Một file chính để kết nối toàn bộ hệ thống.</h2>
+                        <p>
+                            File <strong>main.scss</strong> import các partial theo đúng nhóm,
+                            giúp developer dễ tìm file cần sửa và dễ mở rộng dự án sau này.
+                        </p>
+                    </div>
+
+                    <pre class="workflow__code"><code>$ sass/
+├── abstracts/
+├── base/
+├── layout/
+├── components/
+├── pages/
+├── themes/
+└── vendors/
+
+main.scss</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--contact" id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <span class="section__tag">THỰC HÀNH</span>
+                    <h2>Sẵn sàng tổ chức Sass cho dự án đầu tiên?</h2>
+                    <p>Bắt đầu từ một cấu trúc nhỏ nhưng có quy tắc rõ ràng.</p>
+                    <a class="button button--light" href="mailto:hello@example.com">Liên hệ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Sass Practice</p>
+            <p>• Abstracts • Base • Layout • Components • Pages • Themes • Vendors</p>
+        </div>
+    </footer>
+
+</body>
+</html>
