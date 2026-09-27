@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS CLI Practice</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <p class="hero__tag">SASS CLI &amp; NPM</p>
+            <h1>Luyện tập biên dịch SCSS sang CSS</h1>
+            <p class="hero__text">
+                Trang thực hành minh họa cách viết SCSS, sử dụng biến, mixin và nesting,
+                sau đó biên dịch thành CSS bằng Sass CLI.
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Quy trình Sass</h2>
+
+            <div class="steps">
+                <article class="card">
+                    <span class="card__number">01</span>
+                    <h3>Kiểm tra Node.js</h3>
+                    <p>Chạy node -v và npm -v trong Terminal để kiểm tra môi trường.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card__number">02</span>
+                    <h3>Cài đặt Sass</h3>
+                    <p>Sử dụng npm install để cài Sass cho dự án.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card__number">03</span>
+                    <h3>Biên dịch</h3>
+                    <p>Chuyển SCSS thành CSS và dùng watch mode để tự động cập nhật.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--accent">
+            <div class="section__grid">
+                <div>
+                    <p class="section__tag">CLI COMMAND</p>
+                    <h2>SCSS → CSS</h2>
+                    <p>
+                        File main.scss là entry point. CSS đầu ra được tạo trong thư mục css.
+                    </p>
+                </div>
+
+                <pre class="code-box"><code>npm install
+npm run sass
+npm run watch</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Các khái niệm đang sử dụng</h2>
+
+            <div class="concept-list">
+                <div class="concept">
+                    <strong>$variables</strong>
+                    <span>Quản lý màu sắc và khoảng cách.</span>
+                </div>
+
+                <div class="concept">
+                    <strong>@mixin</strong>
+                    <span>Tái sử dụng nhóm quy tắc CSS.</span>
+                </div>
+
+                <div class="concept">
+                    <strong>Nesting</strong>
+                    <span>Giúp SCSS dễ đọc và dễ tổ chức.</span>
+                </div>
+
+                <div class="concept">
+                    <strong>Watch</strong>
+                    <span>Tự động biên dịch khi file thay đổi.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Sass CLI Practice</p>
+            <p>SCSS • npm • Sass CLI • CSS</p>
+        </div>
+    </footer>
+
+</body>
+</html>
