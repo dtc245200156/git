@@ -1,0 +1,14 @@
+.footer {
+  background: $secondary-color;
+  color: #cbd5e1;
+  padding: spacing(4) 0;
+
+  &__inner {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: spacing(2);
+    flex-wrap: wrap;
+  }
+}
