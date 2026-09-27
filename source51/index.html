@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tìm kiếm</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+        .container {
+            width: min(100%, 720px);
+            padding: 36px;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 14px 40px rgba(31, 41, 55, 0.12);
+        }
+        h1 { margin-top: 0; margin-bottom: 8px; }
+        .intro {
+            margin-top: 0;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        .search-box {
+            margin-top: 24px;
+            padding: 22px;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+        }
+        .search-box h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        .search-row {
+            display: flex;
+            gap: 10px;
+        }
+        .search-row input[type="text"] {
+            flex: 1;
+            min-height: 44px;
+            padding: 0 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font: inherit;
+        }
+        .search-row input[type="submit"] {
+            min-height: 44px;
+            padding: 0 18px;
+            border: 0;
+            border-radius: 8px;
+            background: #2563eb;
+            color: #fff;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .bing input[type="submit"] { background: #128f6b; }
+        .note {
+            margin: 14px 0 0;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        code {
+            padding: 2px 5px;
+            border-radius: 4px;
+            background: #f1f5f9;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 24px 18px; }
+            .search-row { flex-direction: column; }
+            .search-row input[type="submit"] { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Form Tìm kiếm</h1>
+        <p class="intro">
+            Nhập từ khóa và chọn công cụ tìm kiếm. Dữ liệu được gửi bằng phương thức GET.
+        </p>
+
+        <section class="search-box">
+            <h2>Tìm kiếm với Google</h2>
+            <form action="https://www.google.com.vn/search" method="GET">
+                <div class="search-row">
+                    <input type="text" name="q" placeholder="Nhập từ khóa" aria-label="Từ khóa tìm kiếm Google" required>
+                    <input type="submit" value="Tìm kiếm">
+                </div>
+            </form>
+            <p class="note">URL nhận dữ liệu: <code>https://www.google.com.vn/search?q=...</code></p>
+        </section>
+
+        <section class="search-box bing">
+            <h2>Tìm kiếm với Bing</h2>
+            <form action="https://www.bing.com/search" method="GET">
+                <div class="search-row">
+                    <input type="text" name="q" placeholder="Nhập từ khóa" aria-label="Từ khóa tìm kiếm Bing" required>
+                    <input type="submit" value="Tìm kiếm">
+                </div>
+            </form>
+            <p class="note">Bing cũng sử dụng tham số <code>q</code> cho từ khóa tìm kiếm.</p>
+        </section>
+    </main>
+</body>
+</html>
