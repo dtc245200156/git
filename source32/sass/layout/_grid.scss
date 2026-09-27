@@ -1,0 +1,13 @@
+.about-grid,
+.feature-grid {
+  display: grid;
+  gap: spacing(3);
+}
+
+.about-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
