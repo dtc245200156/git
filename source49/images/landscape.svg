@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Phong cảnh núi và hồ lúc hoàng hôn</title>
+  <desc id="desc">Một minh họa phong cảnh gồm bầu trời, mặt trời, núi, hồ nước và cây cối.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#274690"/>
+      <stop offset="0.55" stop-color="#6f8edb"/>
+      <stop offset="1" stop-color="#f2b880"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#355d8c"/>
+      <stop offset="1" stop-color="#182c45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <circle cx="850" cy="190" r="82" fill="#ffd27d"/>
+  <path d="M0 430 L210 230 L360 390 L540 190 L760 430 L940 250 L1200 470 V700 H0 Z" fill="#2b3d5d"/>
+  <path d="M0 505 L170 350 L315 480 L505 315 L695 505 L910 355 L1200 525 V700 H0 Z" fill="#1e2b43"/>
+  <path d="M0 495 C220 450 420 500 610 475 C800 450 1010 470 1200 450 V700 H0 Z" fill="url(#water)"/>
+  <path d="M0 550 C210 515 410 565 610 535 C800 505 1010 545 1200 515" fill="none" stroke="#8db0d7" stroke-width="8" opacity=".55"/>
+  <path d="M90 650 C105 540 110 470 145 415 C160 470 165 540 170 650" fill="#173127"/>
+  <path d="M1030 680 C1040 555 1055 480 1095 420 C1110 500 1112 570 1115 680" fill="#173127"/>
+  <path d="M72 520 l68 -135 l68 135 Z" fill="#214536"/>
+  <path d="M1005 540 l90 -155 l90 155 Z" fill="#214536"/>
+</svg>
