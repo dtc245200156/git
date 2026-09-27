@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+        }
+
+        .container {
+            width: min(100%, 900px);
+            margin: 0 auto;
+            padding: 32px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 24px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #cbd5e1;
+            padding: 14px 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #e8eef8;
+            text-align: center;
+        }
+
+        td:first-child,
+        td:nth-child(2) {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        td[rowspan] {
+            background: #f8fafc;
+            vertical-align: middle;
+        }
+
+        td[colspan] {
+            background: #fff4d6;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        tr:nth-child(2) td:not([rowspan]):not([colspan]),
+        tr:nth-child(3) td:not([rowspan]):not([colspan]) {
+            background: #fcfdff;
+        }
+
+        @media (max-width: 620px) {
+            .container {
+                padding: 22px 16px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th,
+            td {
+                padding: 10px 7px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Lịch họp công ty</h1>
+
+        <table>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Thứ Hai<br>06/10/2026</td>
+                <td>08:00 - 09:00</td>
+                <td>Họp giao ban đầu tuần</td>
+            </tr>
+
+            <tr>
+                <td>14:00 - 15:00</td>
+                <td>Họp nhóm dự án</td>
+            </tr>
+
+            <tr>
+                <td>Thứ Ba<br>07/10/2026</td>
+                <td>09:00 - 11:00</td>
+                <td colspan="1">Đào tạo nội bộ</td>
+            </tr>
+
+            <tr>
+                <td>Thứ Tư<br>08/10/2026</td>
+                <td colspan="2">09:00 - 12:00 — Hội thảo kế hoạch quý</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Thứ Năm<br>09/10/2026</td>
+                <td>10:00 - 11:00</td>
+                <td>Họp phòng kinh doanh</td>
+            </tr>
+
+            <tr>
+                <td>15:00 - 16:00</td>
+                <td>Họp phòng nhân sự</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>
