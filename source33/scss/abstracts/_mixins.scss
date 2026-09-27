@@ -1,0 +1,9 @@
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin transition($properties...) {
+  transition: $properties 0.25s ease;
+}
