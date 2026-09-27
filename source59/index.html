@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuộc tính danh sách trong CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="hero">
+            <p class="eyebrow">CSS LIST PROPERTIES</p>
+            <h1>Thuộc tính về danh sách trong CSS</h1>
+            <p>
+                Thử nghiệm các kiểu đánh dấu, vị trí đánh dấu, hình ảnh đánh dấu
+                và thuộc tính rút gọn <code>list-style</code>.
+            </p>
+        </header>
+
+        <section class="demo-grid">
+            <article class="card">
+                <h2>1. list-style-type</h2>
+
+                <h3>Danh sách không có thứ tự</h3>
+                <ul class="disc-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <ul class="circle-list">
+                    <li>Thiết kế giao diện</li>
+                    <li>Bố cục trang web</li>
+                    <li>Responsive</li>
+                </ul>
+
+                <ul class="square-list">
+                    <li>Frontend</li>
+                    <li>Backend</li>
+                    <li>Database</li>
+                </ul>
+
+                <h3>Danh sách có thứ tự</h3>
+                <ol class="decimal-list">
+                    <li>Phân tích yêu cầu</li>
+                    <li>Thiết kế giao diện</li>
+                    <li>Lập trình</li>
+                </ol>
+
+                <ol class="upper-roman-list">
+                    <li>Khởi động</li>
+                    <li>Thực hành</li>
+                    <li>Tổng kết</li>
+                </ol>
+
+                <ol class="lower-alpha-list">
+                    <li>Phần A</li>
+                    <li>Phần B</li>
+                    <li>Phần C</li>
+                </ol>
+            </article>
+
+            <article class="card">
+                <h2>2. list-style-image</h2>
+                <p>Thay bullet mặc định bằng một hình ảnh nhỏ.</p>
+
+                <ul class="image-list">
+                    <li>Hoàn thành bài tập</li>
+                    <li>Kiểm tra giao diện</li>
+                    <li>Đẩy mã nguồn lên GitHub</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>3. list-style-position</h2>
+
+                <h3>outside</h3>
+                <ul class="position-outside">
+                    <li>Marker nằm bên ngoài khối nội dung. Nội dung dài sẽ giữ lề rõ ràng.</li>
+                    <li>Dòng thứ hai tiếp tục thẳng hàng với nội dung của mục.</li>
+                </ul>
+
+                <h3>inside</h3>
+                <ul class="position-inside">
+                    <li>Marker nằm bên trong dòng nội dung của mục danh sách.</li>
+                    <li>Vị trí của marker tham gia vào vùng nội dung.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>4. list-style rút gọn</h2>
+                <p>
+                    Có thể thiết lập kiểu đánh dấu, vị trí và hình ảnh trong
+                    cùng một khai báo.
+                </p>
+
+                <ul class="shorthand-list">
+                    <li>Điều hướng trực quan</li>
+                    <li>Khoảng cách hợp lý</li>
+                    <li>Giao diện dễ đọc</li>
+                </ul>
+
+                <pre>list-style: square inside none;</pre>
+            </article>
+
+            <article class="card color-demo">
+                <h2>5. Danh sách với màu sắc</h2>
+
+                <ol class="colored-list">
+                    <li><span>Học HTML</span></li>
+                    <li><span>Học CSS</span></li>
+                    <li><span>Học JavaScript</span></li>
+                </ol>
+
+                <ul class="category-list">
+                    <li>Thiết kế</li>
+                    <li>Lập trình</li>
+                    <li>Kiểm thử</li>
+                </ul>
+            </article>
+
+            <article class="card reference">
+                <h2>6. Tóm tắt</h2>
+                <table>
+                    <tr>
+                        <th>Thuộc tính</th>
+                        <th>Vai trò</th>
+                    </tr>
+                    <tr>
+                        <td><code>list-style-type</code></td>
+                        <td>Chọn kiểu marker.</td>
+                    </tr>
+                    <tr>
+                        <td><code>list-style-image</code></td>
+                        <td>Dùng hình ảnh làm marker.</td>
+                    </tr>
+                    <tr>
+                        <td><code>list-style-position</code></td>
+                        <td>Đặt marker inside hoặc outside.</td>
+                    </tr>
+                    <tr>
+                        <td><code>list-style</code></td>
+                        <td>Thuộc tính rút gọn.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
