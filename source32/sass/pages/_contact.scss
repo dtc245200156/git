@@ -1,0 +1,54 @@
+.section--workflow {
+  background: $light-color;
+}
+
+.workflow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: spacing(5);
+  align-items: center;
+
+  &__content {
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: spacing(2);
+    }
+
+    p {
+      color: $muted-color;
+    }
+  }
+
+  &__code {
+    margin: 0;
+    padding: spacing(3);
+    overflow: auto;
+    border-radius: 18px;
+    background: $secondary-color;
+    color: #cbd5e1;
+  }
+}
+
+.section--contact {
+  background: $primary-color;
+}
+
+.contact-box {
+  text-align: center;
+  color: $white-color;
+
+  .section__tag {
+    color: #bfdbfe;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: spacing(1);
+  }
+
+  p {
+    margin-bottom: spacing(3);
+    color: #dbeafe;
+  }
+}
