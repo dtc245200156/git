@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        .wufoo {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+
+        .form-box {
+            width: min(100%, 620px);
+            margin: 40px auto;
+            padding: 28px 32px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            background: #fff;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f5f6f8;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .field {
+            margin-bottom: 18px;
+        }
+
+        input[type="text"],
+        select {
+            min-height: 36px;
+            padding: 6px 9px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+        }
+
+        .phone input {
+            width: 54px;
+        }
+
+        .submit-btn {
+            padding: 10px 22px;
+            border: 0;
+            border-radius: 6px;
+            background: #1976d2;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #125ea7;
+        }
+
+        @media (max-width: 600px) {
+            .form-box {
+                padding: 22px 18px;
+            }
+
+            input[type="text"],
+            select {
+                max-width: 100%;
+            }
+
+            .name-fields {
+                display: grid;
+                gap: 10px;
+            }
+
+            .email-field {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="simpleform.html" class="wufoo form-box">
+        <h2>Order Form</h2>
+
+        <div class="field">
+            <p>What would you like to buy?</p>
+            <select name="product">
+                <option value="">A</option>
+                <option value="B">B (+ 0.5$)</option>
+                <option value="C">C (+ 0.5$)</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <p>How many would you like to order?</p>
+            <label><input type="radio" name="quantity" value="1"> 1 - $10</label><br>
+            <label><input type="radio" name="quantity" value="2"> 2 - $20</label><br>
+            <label><input type="radio" name="quantity" value="3"> 3 - $25</label>
+        </div>
+
+        <div class="field">
+            <p>Name <span style="color: red">*</span></p>
+            <div class="name-fields">
+                <input type="text" name="firstname" placeholder="FirstName" size="15" required>
+                <input type="text" name="lastname" placeholder="LastName" size="15" required>
+            </div>
+        </div>
+
+        <div class="field">
+            <p>Email</p>
+            <input class="email-field" type="email" name="email" size="35">
+        </div>
+
+        <div class="field">
+            <p>Phone Number</p>
+            <div class="phone">
+                <input type="text" name="phone1" maxlength="4" inputmode="numeric"> -
+                <input type="text" name="phone2" maxlength="4" inputmode="numeric"> -
+                <input type="text" name="phone3" maxlength="4" inputmode="numeric">
+            </div>
+        </div>
+
+        <p>
+            <button type="submit" class="submit-btn" name="btSubmit" value="Submit">Submit</button>
+        </p>
+    </form>
+</body>
+</html>
