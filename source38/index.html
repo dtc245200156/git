@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mindful Pages — Book Landing Page</title>
+  <meta name="description" content="Trang giới thiệu sách responsive được xây dựng bằng Bootstrap và CSS.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">
+      <i class="bi bi-book-half me-2"></i>Mindful Pages
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#overview">Book Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="#author">Author</a></li>
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prices">Prices</a></li>
+        <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+        <li class="nav-item"><a class="nav-link" href="#reviews">Reader's Say</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6 text-center text-lg-start">
+        <span class="badge hero-badge rounded-pill mb-3">NEW BOOK • 2026 EDITION</span>
+        <h1 class="display-3 fw-bold mb-3">The Quiet Mind</h1>
+        <p class="lead mb-4">
+          Một cuốn sách truyền cảm hứng giúp bạn sống chậm, tập trung và xây dựng
+          những thói quen nhỏ tạo ra thay đổi lớn.
+        </p>
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+          <a class="btn btn-primary btn-lg px-4" href="#prices">Buy the Book</a>
+          <a class="btn btn-outline-light btn-lg px-4" href="#overview">Read Overview</a>
+        </div>
+        <div class="hero-meta mt-4">
+          <span><i class="bi bi-star-fill"></i> 4.9/5</span>
+          <span><i class="bi bi-clock"></i> 7 chapters</span>
+          <span><i class="bi bi-file-earmark-text"></i> 214 pages</span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="book-stage mx-auto">
+          <div class="book-cover">
+            <div class="book-cover__top">MINDFUL LIVING</div>
+            <div class="book-cover__main">THE<br>QUIET<br>MIND</div>
+            <div class="book-cover__bottom">
+              <span>THU AN</span>
+              <small>Author &amp; Speaker</small>
+            </div>
+          </div>
+          <div class="book-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="section-padding" id="overview">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="section-label">BOOK OVERVIEW</div>
+        <h2 class="section-title">Một hành trình trở về với sự tập trung.</h2>
+        <p class="text-secondary">
+          The Quiet Mind kết hợp những câu chuyện ngắn, bài tập thực hành và gợi ý
+          đơn giản để bạn giảm xao nhãng trong công việc và đời sống hàng ngày.
+        </p>
+        <div class="row g-3 mt-3">
+          <div class="col-sm-6">
+            <div class="mini-card h-100">
+              <i class="bi bi-journal-richtext"></i>
+              <h3 class="h6 mt-3">Thực hành dễ dàng</h3>
+              <p class="small text-secondary mb-0">Bài tập 5–15 phút có thể áp dụng ngay.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="mini-card h-100">
+              <i class="bi bi-lightbulb"></i>
+              <h3 class="h6 mt-3">Ý tưởng rõ ràng</h3>
+              <p class="small text-secondary mb-0">Ngôn ngữ gần gũi, tập trung vào điều hữu ích.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="overview-panel">
+          <div class="overview-panel__number">01</div>
+          <div>
+            <h3 class="h4">Bạn sẽ nhận được gì?</h3>
+            <ul class="list-unstyled mb-0">
+              <li><i class="bi bi-check-circle-fill me-2"></i>Hiểu cách thiết kế môi trường ít xao nhãng.</li>
+              <li><i class="bi bi-check-circle-fill me-2"></i>Xây dựng routine đọc, làm việc và nghỉ ngơi.</li>
+              <li><i class="bi bi-check-circle-fill me-2"></i>Tạo hệ thống ghi chú đơn giản để nhớ lâu hơn.</li>
+              <li><i class="bi bi-check-circle-fill me-2"></i>Thiết lập mục tiêu theo từng bước nhỏ.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding section-soft" id="author">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="author-photo">
+          <div class="author-photo__circle"><i class="bi bi-person"></i></div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="section-label">AUTHOR</div>
+        <h2 class="section-title">Thu An</h2>
+        <p class="lead text-secondary">
+          Tác giả, diễn giả và người sáng lập cộng đồng Reading Hour.
+        </p>
+        <p class="text-secondary">
+          Thu An viết về thói quen, sự tập trung và cách biến việc đọc thành một phần
+          tự nhiên của cuộc sống. Những nội dung trong cuốn sách được xây dựng từ
+          các buổi workshop và trải nghiệm làm việc với người trẻ.
+        </p>
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          <span class="chip">Writer</span>
+          <span class="chip">Speaker</span>
+          <span class="chip">Book Mentor</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" id="features">
+  <div class="container">
+    <div class="text-center mx-auto section-heading">
+      <div class="section-label">FEATURES</div>
+      <h2 class="section-title">Những điểm nổi bật của sách</h2>
+      <p class="text-secondary">Thiết kế nội dung ngắn gọn để bạn vừa đọc vừa áp dụng.</p>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card h-100">
+          <i class="bi bi-bookmark-star"></i>
+          <h3 class="h5">7 chương thực hành</h3>
+          <p class="text-secondary mb-0">Mỗi chương tập trung vào một kỹ năng cụ thể.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card h-100">
+          <i class="bi bi-grid-1x2"></i>
+          <h3 class="h5">Layout dễ đọc</h3>
+          <p class="text-secondary mb-0">Các phần được chia nhỏ, phù hợp cả đọc nhanh và đọc sâu.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card h-100">
+          <i class="bi bi-pencil-square"></i>
+          <h3 class="h5">Workbook kèm theo</h3>
+          <p class="text-secondary mb-0">Có trang ghi chú để biến ý tưởng thành hành động.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card h-100">
+          <i class="bi bi-phone"></i>
+          <h3 class="h5">Đọc đa thiết bị</h3>
+          <p class="text-secondary mb-0">Phiên bản điện tử tối ưu cho desktop, tablet và mobile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding section-soft" id="prices">
+  <div class="container">
+    <div class="text-center mx-auto section-heading">
+      <div class="section-label">PRICES</div>
+      <h2 class="section-title">Chọn phiên bản phù hợp</h2>
+    </div>
+    <div class="row justify-content-center g-4 mt-2">
+      <div class="col-md-6 col-xl-4">
+        <div class="price-card h-100">
+          <span class="price-card__tag">DIGITAL</span>
+          <h3 class="h4 mt-3">E-book</h3>
+          <p class="text-secondary">PDF + EPUB</p>
+          <div class="price">$7.99</div>
+          <a href="#download" class="btn btn-outline-primary w-100">Choose Digital</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="price-card price-card--featured h-100">
+          <span class="price-card__tag">POPULAR</span>
+          <h3 class="h4 mt-3">Paperback</h3>
+          <p class="text-secondary">Sách giấy + bookmark</p>
+          <div class="price">$14.99</div>
+          <a href="#download" class="btn btn-primary w-100">Choose Paperback</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4">
+        <div class="price-card h-100">
+          <span class="price-card__tag">PREMIUM</span>
+          <h3 class="h4 mt-3">Collector Set</h3>
+          <p class="text-secondary">Sách + workbook + signed card</p>
+          <div class="price">$24.99</div>
+          <a href="#download" class="btn btn-outline-primary w-100">Choose Premium</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding" id="download">
+  <div class="container">
+    <div class="download-box">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="section-label">DOWNLOAD</div>
+          <h2 class="section-title mb-2">Bắt đầu đọc hôm nay.</h2>
+          <p class="text-secondary mb-0">Tải bản đọc thử gồm chương mở đầu và workbook mẫu.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="btn btn-primary btn-lg px-4" href="#" role="button">
+            <i class="bi bi-download me-2"></i>Download Sample
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-padding section-soft" id="reviews">
+  <div class="container">
+    <div class="text-center section-heading mx-auto">
+      <div class="section-label">READER'S SAY</div>
+      <h2 class="section-title">Độc giả nói gì?</h2>
+      <p class="text-secondary">Một vài phản hồi nổi bật sau khi đọc sách.</p>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-lg-4">
+        <div class="review-card h-100">
+          <div class="stars">★★★★★</div>
+          <p>“Cách viết nhẹ nhàng nhưng rất thực tế. Tôi bắt đầu bằng 10 phút đọc mỗi tối và duy trì được thói quen.”</p>
+          <strong>Minh Khoa</strong>
+          <span>Product Designer</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="review-card h-100">
+          <div class="stars">★★★★★</div>
+          <p>“Phần workbook là thứ tôi dùng nhiều nhất. Các câu hỏi giúp tôi nhìn lại việc mình đang ưu tiên.”</p>
+          <strong>Lan Chi</strong>
+          <span>Content Creator</span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="review-card h-100">
+          <div class="stars">★★★★★</div>
+          <p>“Mình thích cấu trúc theo từng bước nhỏ. Đọc trên điện thoại cũng dễ theo dõi và ghi chú.”</p>
+          <strong>Hoàng Nam</strong>
+          <span>Software Engineer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <a class="navbar-brand fw-bold text-white" href="#home">
+          <i class="bi bi-book-half me-2"></i>Mindful Pages
+        </a>
+        <p class="small text-white-50 mt-2 mb-0">A responsive Bootstrap book landing page.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a class="footer-link" href="#home">Home</a>
+        <a class="footer-link" href="#prices">Prices</a>
+        <a class="footer-link" href="#reviews">Reviews</a>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="small text-white-50">© 2026 Mindful Pages. Built for Bootstrap practice.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
