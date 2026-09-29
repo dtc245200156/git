@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Layout Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="fixed-header">
+    <div class="header-inner">
+        <div class="brand">facebook</div>
+
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm trên Facebook">
+        </div>
+
+        <nav class="top-nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Bạn bè</a>
+            <a href="#">Thông báo</a>
+            <a href="#">Tài khoản</a>
+        </nav>
+    </div>
+</header>
+
+<div class="page-layout">
+    <aside class="left-sidebar">
+        <div class="profile-card">
+            <div class="avatar">GA</div>
+            <div>
+                <h3>Giàng Hồng Anh</h3>
+                <p>Trang cá nhân</p>
+            </div>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li><a href="#">🏠 Trang chủ</a></li>
+            <li><a href="#">👥 Bạn bè</a></li>
+            <li><a href="#">💬 Tin nhắn</a></li>
+            <li><a href="#">📅 Kỷ niệm</a></li>
+            <li><a href="#">🔖 Đã lưu</a></li>
+            <li><a href="#">⚙️ Cài đặt</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <section class="stories card">
+            <h2>Stories</h2>
+            <div class="story-list">
+                <div class="story story-new">
+                    <div class="story-image">+</div>
+                    <span>Tạo tin</span>
+                </div>
+                <div class="story">
+                    <div class="story-image">LN</div>
+                    <span>Lan Anh</span>
+                </div>
+                <div class="story">
+                    <div class="story-image">MH</div>
+                    <span>Minh Hoàng</span>
+                </div>
+                <div class="story">
+                    <div class="story-image">TN</div>
+                    <span>Thu Ngân</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="composer card">
+            <div class="composer-top">
+                <div class="avatar small">GA</div>
+                <input type="text" placeholder="Bạn đang nghĩ gì?">
+            </div>
+            <div class="composer-actions">
+                <button>📹 Video trực tiếp</button>
+                <button>🖼️ Ảnh/video</button>
+                <button>😊 Cảm xúc</button>
+            </div>
+        </section>
+
+        <article class="post card">
+            <div class="post-header">
+                <div class="avatar small">GA</div>
+                <div>
+                    <h3>Giàng Hồng Anh</h3>
+                    <span>Hôm nay lúc 19:30 · 🌐</span>
+                </div>
+            </div>
+
+            <p class="post-text">
+                Hôm nay mình đang luyện tập CSS với fixed header, sidebar và layout
+                nhiều cột. Giao diện đơn giản nhưng rất hữu ích để hiểu cách tổ chức
+                một trang web lớn.
+            </p>
+
+            <div class="post-image">NỘI DUNG BÀI VIẾT</div>
+
+            <div class="post-stats">
+                <span>👍 128</span>
+                <span>24 bình luận</span>
+                <span>8 lượt chia sẻ</span>
+            </div>
+
+            <div class="post-actions">
+                <button>👍 Thích</button>
+                <button>💬 Bình luận</button>
+                <button>↗ Chia sẻ</button>
+            </div>
+        </article>
+
+        <article class="post card">
+            <div class="post-header">
+                <div class="avatar small">CB</div>
+                <div>
+                    <h3>Code Buddy</h3>
+                    <span>Hôm qua lúc 20:15 · 🌐</span>
+                </div>
+            </div>
+
+            <p class="post-text">
+                Flexbox và CSS Grid là hai công cụ rất hữu ích để xây dựng giao diện
+                responsive. Khi kết hợp với position: fixed, chúng ta có thể tạo header
+                và sidebar luôn hiển thị khi cuộn trang.
+            </p>
+
+            <div class="post-actions">
+                <button>👍 Thích</button>
+                <button>💬 Bình luận</button>
+                <button>↗ Chia sẻ</button>
+            </div>
+        </article>
+    </main>
+
+    <aside class="right-sidebar">
+        <section class="card sidebar-block">
+            <h2>Người liên hệ</h2>
+            <ul class="contacts">
+                <li><span class="online">●</span> Lan Anh</li>
+                <li><span class="online">●</span> Minh Hoàng</li>
+                <li><span class="online">●</span> Thu Ngân</li>
+                <li><span class="online">●</span> Code Buddy</li>
+                <li><span class="online">●</span> Quốc Huy</li>
+            </ul>
+        </section>
+
+        <section class="card sidebar-block">
+            <h2>Sự kiện</h2>
+            <p><strong>Hôm nay</strong></p>
+            <p>Workshop CSS Layout lúc 20:00</p>
+        </section>
+    </aside>
+</div>
+
+<footer>
+    <p>Facebook Layout Practice · HTML5 + CSS</p>
+</footer>
+
+</body>
+</html>
