@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc truyện - Dế Mèn phiêu lưu ký</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f1ea;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: min(1000px, 92%);
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 28px 0 10px;
+        }
+
+        header img {
+            width: 180px;
+            max-width: 60%;
+            display: block;
+            margin: 0 auto 14px;
+            border-radius: 14px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        h1 {
+            margin: 0;
+            color: #234b2b;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            margin: 6px 0 20px;
+            color: #6d6d6d;
+        }
+
+        .toc {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 22px;
+            margin-bottom: 28px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            color: #234b2b;
+        }
+
+        .toc a {
+            display: block;
+            color: #1f5f35;
+            text-decoration: none;
+            padding: 7px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .toc a:last-child {
+            border-bottom: 0;
+        }
+
+        .toc a:hover {
+            color: #c96d00;
+        }
+
+        .chapter {
+            background: #ffffff;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 5px solid #8cae68;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+        }
+
+        .chapter h5 {
+            margin: 0 0 12px;
+            color: #234b2b;
+            font-size: 22px;
+        }
+
+        .chapter p {
+            margin: 10px 0;
+        }
+
+        .back-top {
+            display: inline-block;
+            margin-top: 10px;
+            color: #1f5f35;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px 0 40px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .chapter {
+                padding: 18px;
+            }
+
+            .chapter h5 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+
+<div class="container">
+    <header>
+        <img
+            src="https://placehold.co/360x220/8cae68/ffffff?text=BOOK"
+            alt="Ảnh bìa truyện"
+        >
+        <h1>Dế Mèn phiêu lưu ký</h1>
+        <p class="subtitle">Trang đọc truyện luyện tập HTML và CSS</p>
+    </header>
+
+    <nav class="toc">
+        <h2>Mục lục</h2>
+        <h5><a href="#chapter1">Chương 1: Dế Mèn ra đời</a></h5>
+        <h5><a href="#chapter2">Chương 2: Cuộc gặp gỡ bên bờ ruộng</a></h5>
+        <h5><a href="#chapter3">Chương 3: Bắt đầu chuyến phiêu lưu</a></h5>
+    </nav>
+
+    <main>
+        <section class="chapter" id="chapter1">
+            <h5>Chương 1: Dế Mèn ra đời</h5>
+            <p>
+                Dế Mèn sinh ra vào một buổi sớm mùa hè, khi cỏ cây ngoài đồng còn đẫm sương.
+                Từ một chú dế nhỏ, Dế Mèn nhanh chóng lớn lên và luôn tò mò trước mọi điều
+                diễn ra quanh mình.
+            </p>
+            <p>
+                Cậu thích khám phá những bãi cỏ rộng, những bụi cây rậm rạp và thường tự tin
+                rằng thế giới bên ngoài đang chờ mình chinh phục.
+            </p>
+            <a class="back-top" href="#top">↑ Về đầu trang</a>
+        </section>
+
+        <section class="chapter" id="chapter2">
+            <h5>Chương 2: Cuộc gặp gỡ bên bờ ruộng</h5>
+            <p>
+                Trong một lần đi xa khỏi hang, Dế Mèn gặp một người bạn nhỏ bên bờ ruộng.
+                Cuộc trò chuyện khiến Dế Mèn nhận ra rằng mỗi sinh vật đều có hoàn cảnh và
+                cách sống riêng.
+            </p>
+            <p>
+                Từ cuộc gặp ấy, Dế Mèn bắt đầu suy nghĩ nhiều hơn về cách cư xử của mình
+                với những người xung quanh.
+            </p>
+            <a class="back-top" href="#top">↑ Về đầu trang</a>
+        </section>
+
+        <section class="chapter" id="chapter3">
+            <h5>Chương 3: Bắt đầu chuyến phiêu lưu</h5>
+            <p>
+                Với mong muốn nhìn thấy những vùng đất mới, Dế Mèn quyết định rời nơi ở quen
+                thuộc để bắt đầu một chuyến đi dài.
+            </p>
+            <p>
+                Trên đường đi, cậu gặp thêm nhiều người bạn, trải qua không ít thử thách và
+                dần hiểu rằng trưởng thành không chỉ là mạnh mẽ hơn, mà còn là biết suy nghĩ,
+                chia sẻ và chịu trách nhiệm với hành động của mình.
+            </p>
+            <a class="back-top" href="#top">↑ Về đầu trang</a>
+        </section>
+    </main>
+
+    <footer>
+        Bài thực hành CSS - Trang đọc truyện đơn giản
+    </footer>
+</div>
+
+</body>
+</html>
