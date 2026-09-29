@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidMovie - Phim hoạt hình</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header">
+    <div class="header-inner">
+        <a class="logo" href="#">KidMovie</a>
+
+        <div class="search">
+            <label for="searchInput">Tìm kiếm phim</label>
+            <input id="searchInput" type="search" placeholder="Nhập tên phim...">
+        </div>
+
+        <nav class="header-links">
+            <a class="active" href="#">Trang chủ</a>
+            <a href="#">Phim mới</a>
+            <a href="#">Xem nhiều</a>
+        </nav>
+    </div>
+</header>
+
+<div id="head-link">
+    <a href="#">Phim hoạt hình</a>
+    <a href="#">Audio Việt</a>
+    <a href="#">HD 720p</a>
+    <a href="#">Full HD 1080p</a>
+    <a href="#">Phim giáo dục</a>
+</div>
+
+<main class="layout">
+    <aside id="left-content">
+        <div class="panel-title">Danh sách phim</div>
+
+        <button class="movie-link active" data-target="movie1">
+            <span>01</span>
+            <div>
+                <strong>Tom & Jerry</strong>
+                <small>HD · Audio Việt</small>
+            </div>
+        </button>
+
+        <button class="movie-link" data-target="movie2">
+            <span>02</span>
+            <div>
+                <strong>Big Buck Bunny</strong>
+                <small>HD · Phụ đề</small>
+            </div>
+        </button>
+
+        <button class="movie-link" data-target="movie3">
+            <span>03</span>
+            <div>
+                <strong>Elephants Dream</strong>
+                <small>Full HD · Thuyết minh</small>
+            </div>
+        </button>
+
+        <button class="movie-link" data-target="movie4">
+            <span>04</span>
+            <div>
+                <strong>Sintel</strong>
+                <small>HD · Audio Việt</small>
+            </div>
+        </button>
+    </aside>
+
+    <section id="right-content">
+        <article class="video-panel active" id="movie1">
+            <div class="video-heading">
+                <div>
+                    <h1>Tom & Jerry</h1>
+                    <p>Phim hoạt hình vui nhộn dành cho trẻ em</p>
+                </div>
+                <span class="quality">HD 720p</span>
+            </div>
+
+            <div class="video-box">
+                <video controls poster="https://placehold.co/1280x720/2c3e50/ffffff?text=Tom+%26+Jerry">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+        </article>
+
+        <article class="video-panel" id="movie2">
+            <div class="video-heading">
+                <div>
+                    <h1>Big Buck Bunny</h1>
+                    <p>Phim hoạt hình mẫu nhúng từ máy chủ video</p>
+                </div>
+                <span class="quality">HD 720p</span>
+            </div>
+
+            <div class="video-box">
+                <video controls poster="https://placehold.co/1280x720/3a506b/ffffff?text=Big+Buck+Bunny">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+        </article>
+
+        <article class="video-panel" id="movie3">
+            <div class="video-heading">
+                <div>
+                    <h1>Elephants Dream</h1>
+                    <p>Minh họa nhúng YouTube bằng iframe</p>
+                </div>
+                <span class="quality">Full HD</span>
+            </div>
+
+            <div class="video-box iframe-box">
+                <iframe
+                    src="https://www.youtube.com/embed/CGVvBseW2AQ"
+                    title="Animated movie demo"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </article>
+
+        <article class="video-panel" id="movie4">
+            <div class="video-heading">
+                <div>
+                    <h1>Sintel</h1>
+                    <p>Trang phim thử nghiệm với iframe YouTube</p>
+                </div>
+                <span class="quality">HD 720p</span>
+            </div>
+
+            <div class="video-box iframe-box">
+                <iframe
+                    src="https://www.youtube.com/embed/4vTeOIw6Mks"
+                    title="Sintel animation demo"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </article>
+
+        <section class="intro-card">
+            <h2>Giới thiệu</h2>
+            <p>
+                KidMovie là giao diện mô phỏng website xem phim hoạt hình, tập trung
+                vào bố cục rõ ràng, menu dễ sử dụng và hiển thị video trực tiếp.
+            </p>
+        </section>
+    </section>
+</main>
+
+<footer id="footer">
+    <p>&copy; 2026 KidMovie - Bài thực hành HTML & CSS</p>
+</footer>
+
+<script>
+    const movieLinks = document.querySelectorAll(".movie-link");
+    const moviePanels = document.querySelectorAll(".video-panel");
+    const searchInput = document.getElementById("searchInput");
+
+    movieLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            const target = link.dataset.target;
+
+            movieLinks.forEach(item => item.classList.remove("active"));
+            moviePanels.forEach(panel => panel.classList.remove("active"));
+
+            link.classList.add("active");
+            document.getElementById(target).classList.add("active");
+        });
+    });
+
+    searchInput.addEventListener("input", () => {
+        const keyword = searchInput.value.trim().toLowerCase();
+
+        movieLinks.forEach(link => {
+            const title = link.querySelector("strong").textContent.toLowerCase();
+            link.hidden = keyword && !title.includes(keyword);
+        });
+    });
+</script>
+
+</body>
+</html>
