@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Embedding Practice</title>
+
+    <!-- Phần 2: Internal CSS -->
+    <style>
+        .internal-title {
+            color: green;
+        }
+
+        .internal-text {
+            color: orange;
+        }
+    </style>
+
+    <!-- Phần 3: External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Thực hành nhúng CSS</h1>
+
+        <section>
+            <h2>Phần 1 - Inline Style</h2>
+            <h3 style="color: blue;">Đây là tiêu đề sử dụng Inline CSS</h3>
+            <p style="color: purple;">Đây là đoạn văn bản sử dụng Inline CSS để thay đổi màu sắc.</p>
+        </section>
+
+        <section>
+            <h2>Phần 2 - Internal Style</h2>
+            <h3 class="internal-title">Đây là tiêu đề sử dụng Internal CSS</h3>
+            <p class="internal-text">Đây là đoạn văn bản sử dụng Internal CSS để thay đổi màu sắc.</p>
+        </section>
+
+        <section>
+            <h2>Phần 3 - External Style</h2>
+            <h3 class="external-title">Đây là tiêu đề sử dụng External CSS</h3>
+            <p class="external-text">Đây là đoạn văn bản sử dụng External CSS để thay đổi màu sắc.</p>
+        </section>
+    </main>
+
+</body>
+</html>
