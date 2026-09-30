@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #2563EB;
+  --secondary-color: #60A5FA;
+  --accent-color: #F59E0B;
+  --text-color: #0F172A;
+  --light-bg-color: #EFF6FF;
+  --darker-primary-color: #1D4ED8;
+}
+
+body {
+  margin: 0;
+  background: #F8FAFC;
+  color: var(--text-color);
+}
+
+.primary-bg {
+  background-color: var(--primary-color) !important;
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color) !important;
+}
+
+.accent-bg {
+  background-color: var(--accent-color) !important;
+}
+
+.text-primary-color {
+  color: var(--primary-color) !important;
+}
+
+.light-bg {
+  background-color: var(--light-bg-color);
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--darker-primary-color);
+  border-color: var(--darker-primary-color);
+  color: #fff;
+}
+
+.logo-mark {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 3px solid currentColor;
+  border-radius: 14px;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.hero-illustration {
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+  background: linear-gradient(135deg, var(--light-bg-color), #fff);
+  border: 1px solid rgba(15, 23, 42, .08);
+}
+
+.board {
+  width: 210px;
+  min-height: 170px;
+  padding: 16px;
+  position: relative;
+  border: 3px solid var(--text-color);
+  border-radius: 16px;
+  background: var(--secondary-color);
+  box-shadow: 10px 10px 0 rgba(15, 23, 42, .14);
+  transform: rotate(-4deg);
+}
+
+.board-alt {
+  transform: rotate(4deg);
+}
+
+.board-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.task {
+  display: block;
+  height: 25px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.task-a {
+  width: 82%;
+}
+
+.task-b {
+  width: 62%;
+  opacity: .85;
+}
+
+.task-c {
+  width: 72%;
+  opacity: .7;
+}
+
+.palette-row {
+  display: flex;
+  gap: 8px;
+  min-height: 96px;
+  align-items: stretch;
+}
+
+.palette-row span {
+  flex: 1;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-illustration {
+    min-height: 210px;
+  }
+
+  .board {
+    width: 190px;
+  }
+}
