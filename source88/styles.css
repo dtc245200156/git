@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef6fb;
+    color: #123B5D;
+}
+
+.container {
+    width: min(1000px, 92%);
+    margin: 50px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    margin-bottom: 6px;
+    color: #2E86AB;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 0 0 8px;
+}
+
+header p:last-child {
+    margin: 0;
+    color: #4d6b7b;
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 280px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(18, 59, 93, 0.15);
+}
+
+.swatch {
+    min-height: 280px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.swatch strong {
+    font-size: 16px;
+}
+
+.swatch span {
+    font-size: 13px;
+}
+
+.swatch-1 {
+    background: #123B5D;
+    color: white;
+}
+
+.swatch-2 {
+    background: #1B5E7A;
+    color: white;
+}
+
+.swatch-3 {
+    background: #2E86AB;
+    color: white;
+}
+
+.swatch-4 {
+    background: #5FA8D3;
+    color: #123B5D;
+}
+
+.swatch-5 {
+    background: #BEE3F8;
+    color: #123B5D;
+}
+
+.notes {
+    margin-top: 22px;
+    padding: 22px;
+    background: white;
+    border: 1px solid #c9dce8;
+    border-radius: 12px;
+}
+
+.notes h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 720px) {
+    .palette {
+        grid-template-columns: 1fr;
+    }
+
+    .swatch {
+        min-height: 110px;
+    }
+}
