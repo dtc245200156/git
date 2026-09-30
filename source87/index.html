@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidFlix - Phim hoạt hình cho bé</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="#">Kid<span>Flix</span></a>
+
+        <div class="search-box">
+            <label for="searchInput">Tìm kiếm phim</label>
+            <input id="searchInput" type="search" placeholder="Tìm kiếm phim theo tên...">
+        </div>
+
+        <div class="header-actions">
+            <a href="#">Trang chủ</a>
+            <a href="#">Thể loại</a>
+            <a href="#">Về chúng tôi</a>
+        </div>
+    </div>
+</header>
+
+<div class="top-space"></div>
+
+<nav class="head-link">
+    <a class="active" href="#">Phim mới</a>
+    <a href="#">Xem nhiều</a>
+    <a href="#">Audio Việt</a>
+    <a href="#">HD 720p</a>
+    <a href="#">FullHD 1080p</a>
+    <a href="#">Giáo dục</a>
+</nav>
+
+<main class="layout">
+    <aside class="left-content">
+        <div class="panel-heading">
+            <h2>Danh sách phim</h2>
+
+            <select id="sortSelect" aria-label="Sắp xếp phim">
+                <option value="newest">Mới cập nhật</option>
+                <option value="views">Nhiều lượt xem</option>
+            </select>
+        </div>
+
+        <div id="movieList">
+            <button class="movie-item active" data-id="movie1" data-title="Big Buck Bunny" data-date="2026-09-29" data-views="9800">
+                <span class="number">01</span>
+                <span class="movie-meta">
+                    <strong>Big Buck Bunny</strong>
+                    <small>HD · Audio Việt</small>
+                </span>
+            </button>
+
+            <button class="movie-item" data-id="movie2" data-title="Sintel" data-date="2026-09-26" data-views="15200">
+                <span class="number">02</span>
+                <span class="movie-meta">
+                    <strong>Sintel</strong>
+                    <small>FullHD · Thuyết minh</small>
+                </span>
+            </button>
+
+            <button class="movie-item" data-id="movie3" data-title="Tears of Steel" data-date="2026-09-27" data-views="7600">
+                <span class="number">03</span>
+                <span class="movie-meta">
+                    <strong>Tears of Steel</strong>
+                    <small>HD · Phụ đề</small>
+                </span>
+            </button>
+
+            <button class="movie-item" data-id="movie4" data-title="Elephants Dream" data-date="2026-09-22" data-views="18600">
+                <span class="number">04</span>
+                <span class="movie-meta">
+                    <strong>Elephants Dream</strong>
+                    <small>FullHD · Audio Việt</small>
+                </span>
+            </button>
+
+            <button class="movie-item" data-id="movie5" data-title="Cosmos Laundromat" data-date="2026-09-24" data-views="11400">
+                <span class="number">05</span>
+                <span class="movie-meta">
+                    <strong>Cosmos Laundromat</strong>
+                    <small>HD · Audio Việt</small>
+                </span>
+            </button>
+        </div>
+
+        <p id="noResult" class="no-result" hidden>Không tìm thấy phim phù hợp.</p>
+    </aside>
+
+    <section class="right-content">
+        <article class="video-card active" id="movie1">
+            <div class="video-info">
+                <div>
+                    <span class="badge">HD 720p</span>
+                    <h1>Big Buck Bunny</h1>
+                    <p>Phim hoạt hình mẫu • Audio Việt • 9.800 lượt xem</p>
+                </div>
+                <span class="updated">Cập nhật 29/09/2026</span>
+            </div>
+
+            <div class="video-wrapper">
+                <video controls preload="metadata" poster="https://placehold.co/1280x720/315f72/ffffff?text=Big+Buck+Bunny">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video HTML5.
+                </video>
+            </div>
+
+            <p class="description">
+                Video HTML5 mẫu để thực hành cách tạo trang xem phim, hiển thị player và bố trí khu vực nội dung bằng DIV và CSS.
+            </p>
+        </article>
+
+        <article class="video-card" id="movie2">
+            <div class="video-info">
+                <div>
+                    <span class="badge fullhd">FullHD 1080p</span>
+                    <h1>Sintel</h1>
+                    <p>Phim hoạt hình mẫu • Thuyết minh • 15.200 lượt xem</p>
+                </div>
+                <span class="updated">Cập nhật 26/09/2026</span>
+            </div>
+
+            <div class="video-wrapper iframe-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+                    title="Animated movie demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p class="description">
+                Khu vực iframe minh họa cách nhúng video YouTube vào trang web.
+            </p>
+        </article>
+
+        <article class="video-card" id="movie3">
+            <div class="video-info">
+                <div>
+                    <span class="badge">HD 720p</span>
+                    <h1>Tears of Steel</h1>
+                    <p>Phim mẫu • Phụ đề • 7.600 lượt xem</p>
+                </div>
+                <span class="updated">Cập nhật 27/09/2026</span>
+            </div>
+
+            <div class="video-wrapper">
+                <video controls preload="metadata" poster="https://placehold.co/1280x720/6d597a/ffffff?text=Tears+of+Steel">
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video HTML5.
+                </video>
+            </div>
+
+            <p class="description">
+                Video mẫu phát trực tiếp từ nguồn MP4, giúp luyện tập thẻ video và giao diện player.
+            </p>
+        </article>
+
+        <article class="video-card" id="movie4">
+            <div class="video-info">
+                <div>
+                    <span class="badge fullhd">FullHD 1080p</span>
+                    <h1>Elephants Dream</h1>
+                    <p>Phim hoạt hình mẫu • Audio Việt • 18.600 lượt xem</p>
+                </div>
+                <span class="updated">Cập nhật 22/09/2026</span>
+            </div>
+
+            <div class="video-wrapper iframe-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+                    title="Animation video demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p class="description">
+                Nội dung minh họa cho cách tổ chức khu vực xem phim với nguồn video nhúng.
+            </p>
+        </article>
+
+        <article class="video-card" id="movie5">
+            <div class="video-info">
+                <div>
+                    <span class="badge">HD 720p</span>
+                    <h1>Cosmos Laundromat</h1>
+                    <p>Phim hoạt hình mẫu • Audio Việt • 11.400 lượt xem</p>
+                </div>
+                <span class="updated">Cập nhật 24/09/2026</span>
+            </div>
+
+            <div class="video-wrapper">
+                <video controls preload="metadata" poster="https://placehold.co/1280x720/537a5b/ffffff?text=Cosmos+Laundromat">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ video HTML5.
+                </video>
+            </div>
+
+            <p class="description">
+                Giao diện tối giản, không đặt banner quảng cáo, tập trung vào nội dung và thao tác xem phim.
+            </p>
+        </article>
+
+        <section class="site-note">
+            <h2>KidFlix</h2>
+            <p>
+                Giao diện thực hành hướng tới trải nghiệm xem phim đơn giản: danh sách rõ ràng,
+                tìm kiếm nhanh, sắp xếp phim và trình phát video ngay trong trang.
+            </p>
+        </section>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 KidFlix - Bài thực hành HTML & CSS</p>
+</footer>
+
+<script>
+    const movieItems = [...document.querySelectorAll(".movie-item")];
+    const movieCards = [...document.querySelectorAll(".video-card")];
+    const searchInput = document.getElementById("searchInput");
+    const sortSelect = document.getElementById("sortSelect");
+    const movieList = document.getElementById("movieList");
+    const noResult = document.getElementById("noResult");
+
+    function openMovie(id) {
+        movieItems.forEach(item => {
+            item.classList.toggle("active", item.dataset.id === id);
+        });
+
+        movieCards.forEach(card => {
+            card.classList.toggle("active", card.id === id);
+        });
+    }
+
+    movieItems.forEach(item => {
+        item.addEventListener("click", () => openMovie(item.dataset.id));
+    });
+
+    searchInput.addEventListener("input", () => {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visible = 0;
+
+        movieItems.forEach(item => {
+            const title = item.dataset.title.toLowerCase();
+            const matched = title.includes(keyword);
+
+            item.hidden = !matched;
+            if (matched) visible++;
+        });
+
+        noResult.hidden = visible !== 0;
+    });
+
+    sortSelect.addEventListener("change", () => {
+        const sorted = [...movieItems].sort((a, b) => {
+            if (sortSelect.value === "views") {
+                return Number(b.dataset.views) - Number(a.dataset.views);
+            }
+
+            return new Date(b.dataset.date) - new Date(a.dataset.date);
+        });
+
+        sorted.forEach(item => movieList.appendChild(item));
+    });
+</script>
+
+</body>
+</html>
