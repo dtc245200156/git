@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing Page CodeGym Career theo phong cách Material Design">
+  <title>CodeGym Career - Material Design Landing Page</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand font-weight-bold d-flex align-items-center" href="#top">
+        <span class="brand-mark mr-2">CG</span>
+        <span>CODEGYM CAREER</span>
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#careerNav"
+              aria-controls="careerNav" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="careerNav">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">Tổng quan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#path">Lộ trình</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Khóa học</a></li>
+          <li class="nav-item"><a class="nav-link" href="#career">Việc làm</a></li>
+          <li class="nav-item ml-lg-2">
+            <a class="btn btn-warning btn-rounded font-weight-bold waves-effect" href="#register">
+              ĐĂNG KÝ TƯ VẤN
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-7 white-text">
+          <span class="badge badge-pill badge-warning text-dark px-3 py-2 mb-3">
+            CODING BOOTCAMP
+          </span>
+          <h1 class="display-4 font-weight-bold mb-3">
+            Trở thành lập trình viên Full-Stack chỉ sau 5 tháng
+          </h1>
+          <p class="lead mb-4">
+            CodeGym Career đào tạo theo mô hình Coding Bootcamp cho người bắt đầu từ con số 0,
+            sinh viên CNTT, sinh viên ngành khác và người muốn chuyển hướng nghề nghiệp.
+          </p>
+          <a href="#register" class="btn btn-warning btn-lg btn-rounded font-weight-bold">
+            NHẬN TƯ VẤN NGAY <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <a href="#about" class="btn btn-outline-white btn-lg btn-rounded ml-md-2 mt-2 mt-md-0">
+            XEM CHƯƠNG TRÌNH
+          </a>
+        </div>
+
+        <div class="col-lg-5 mt-5 mt-lg-0">
+          <div class="material-hero-card z-depth-3">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <span class="small text-muted font-weight-bold">CODEGYM CAREER</span>
+              <span class="hero-icon"><i class="fas fa-code"></i></span>
+            </div>
+            <div class="code-window">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="code-lines">
+                <div><span class="code-key">const</span> career = <span class="code-value">"Full-Stack"</span>;</div>
+                <div><span class="code-key">const</span> weeks = <span class="code-number">20</span>;</div>
+                <div><span class="code-key">const</span> projects = <span class="code-value">"real-world"</span>;</div>
+                <div class="mt-3">&gt; <span class="code-success">build_your_future()</span></div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-4">
+                <div class="metric-value">20</div>
+                <div class="metric-label">tuần</div>
+              </div>
+              <div class="col-4">
+                <div class="metric-value">70h+</div>
+                <div class="metric-label">mỗi tuần</div>
+              </div>
+              <div class="col-4">
+                <div class="metric-value">∞</div>
+                <div class="metric-label">thực chiến</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overview -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <span class="eyebrow">TỔNG QUAN CHƯƠNG TRÌNH</span>
+        <h2 class="font-weight-bold">Học qua làm, rèn nghề như một lập trình viên thực thụ</h2>
+        <p class="text-muted mx-auto">
+          Chương trình cô đọng nội dung thiết yếu, thực hành liên tục, làm việc theo nhóm dự án
+          và tiếp cận các kỹ thuật Agile/Scrum trong môi trường cường độ cao.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card material-card h-100">
+            <div class="card-body">
+              <div class="icon-box bg-primary"><i class="fas fa-briefcase"></i></div>
+              <h4 class="font-weight-bold mt-4">Sự nghiệp bắt đầu sớm</h4>
+              <p class="text-muted mb-0">
+                Từ ngày đầu tiên, học viên làm quen với kỷ luật, văn hóa và nhịp độ làm việc của môi trường CodeGym.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card material-card h-100">
+            <div class="card-body">
+              <div class="icon-box bg-info"><i class="fas fa-stopwatch"></i></div>
+              <h4 class="font-weight-bold mt-4">Cường độ cao</h4>
+              <p class="text-muted mb-0">
+                Chương trình kỳ vọng học viên dành ít nhất 70 giờ mỗi tuần và duy trì nhịp học tập liên tục.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card material-card h-100">
+            <div class="card-body">
+              <div class="icon-box bg-success"><i class="fas fa-building"></i></div>
+              <h4 class="font-weight-bold mt-4">Trải nghiệm doanh nghiệp</h4>
+              <p class="text-muted mb-0">
+                Seminar, techtalk, tham quan doanh nghiệp và các phiên phỏng vấn giúp kết nối quá trình học với thực tế.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card material-card h-100">
+            <div class="card-body">
+              <div class="icon-box bg-deep-purple"><i class="fas fa-laptop-code"></i></div>
+              <h4 class="font-weight-bold mt-4">Thực chiến</h4>
+              <p class="text-muted mb-0">
+                Bắt đầu lập trình từ ngày đầu, làm sản phẩm thực và hợp tác qua các giờ thực hành, pair programming.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mt-4">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <div class="card gradient-card text-white z-depth-2">
+            <div class="card-body p-5">
+              <span class="small font-weight-bold opacity-8">CÁ NHÂN HÓA</span>
+              <h3 class="font-weight-bold mt-2">Hỗ trợ tối đa trong suốt hành trình</h3>
+              <p class="mb-0">
+                Giảng viên và tutor hỗ trợ liên tục; sau chương trình, học viên tiếp tục được đồng hành
+                trong quá trình tìm việc với hoạt động tư vấn và chuẩn bị ứng tuyển.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <ul class="list-group z-depth-1">
+            <li class="list-group-item d-flex align-items-center">
+              <i class="fas fa-check text-success mr-3"></i> Đánh giá năng lực liên tục
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="fas fa-check text-success mr-3"></i> Học theo dự án thực tế
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="fas fa-check text-success mr-3"></i> Tư vấn nghề nghiệp
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="fas fa-check text-success mr-3"></i> Hỗ trợ ứng tuyển
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Path -->
+  <section id="path" class="section-padding bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <span class="eyebrow">20 TUẦN · BOOTCAMP</span>
+          <h2 class="font-weight-bold">Lộ trình học được chia thành những chặng thực chiến</h2>
+          <p class="text-muted">
+            Chương trình tập trung vào kỹ thuật lập trình, dự án, kỹ năng làm việc và phát triển nghề nghiệp.
+            Việc đánh giá được thực hiện liên tục trong từng module và cuối chương trình.
+          </p>
+          <a href="#register" class="btn btn-primary btn-rounded font-weight-bold">
+            NHẬN LỘ TRÌNH <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="timeline-card">
+            <div class="timeline-step">
+              <div class="timeline-number">01</div>
+              <div>
+                <h5 class="font-weight-bold">Nền tảng</h5>
+                <p class="text-muted mb-0">Variables, Program Flow, Array, Object, JavaScript, Function, Debug, Git Basic, HTML Basic, How to learn, Kanban.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-number">02</div>
+              <div>
+                <h5 class="font-weight-bold">Công nghệ & backend</h5>
+                <p class="text-muted mb-0">Java, OOP, Spring MVC, Database, REST, Coding Convention, Linux, UML, Reading Skills, Information Seeking.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="timeline-number">03</div>
+              <div>
+                <h5 class="font-weight-bold">Dự án</h5>
+                <p class="text-muted mb-0">Project, Scrum, Algorithms, Git team work, Design Pattern, Refactoring, OOAD, Testing & TDD.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step border-0 pb-0">
+              <div class="timeline-number">04</div>
+              <div>
+                <h5 class="font-weight-bold">Career & professionalism</h5>
+                <p class="text-muted mb-0">Portfolio building, Career Development, Working Skills và Professionalism.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career services -->
+  <section id="career" class="section-padding">
+    <div class="container">
+      <div class="section-heading text-center mb-5">
+        <span class="eyebrow">DỊCH VỤ VIỆC LÀM</span>
+        <h2 class="font-weight-bold">Từ kỹ năng đến hành trình ứng tuyển</h2>
+        <p class="text-muted mx-auto">
+          CodeGym mô tả dịch vụ việc làm với các hoạt động chuẩn bị ứng tuyển, tư vấn nghề nghiệp,
+          workshop/seminar và Hiring Day.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card material-card h-100">
+            <div class="card-body">
+              <span class="step-tag">BƯỚC 01</span>
+              <h4 class="font-weight-bold mt-3">Tinh chỉnh kỹ năng</h4>
+              <p class="text-muted">
+                Đánh giá năng lực, phản hồi và điều chỉnh lộ trình để học viên cải thiện năng lực nghề nghiệp.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card material-card h-100">
+            <div class="card-body">
+              <span class="step-tag">BƯỚC 02</span>
+              <h4 class="font-weight-bold mt-3">Tư vấn nghề nghiệp 1-1</h4>
+              <p class="text-muted">
+                Hỗ trợ xây dựng lộ trình nghề nghiệp dựa trên năng lực và mục tiêu phát triển của từng học viên.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card material-card h-100">
+            <div class="card-body">
+              <span class="step-tag">BƯỚC 03</span>
+              <h4 class="font-weight-bold mt-3">Ứng tuyển & nhận việc</h4>
+              <p class="text-muted">
+                Chuẩn bị CV, kỹ năng phỏng vấn và kết nối với hoạt động tuyển dụng để sẵn sàng bước vào thị trường.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert material-alert mt-3 z-depth-1" role="alert">
+        <div class="d-flex">
+          <i class="fas fa-info-circle fa-2x mr-3"></i>
+          <div>
+            <h5 class="font-weight-bold">Thông tin theo trang CodeGym Career</h5>
+            <p class="mb-0">
+              Trang nguồn hiện nêu chính sách hoàn 100% học phí nếu học viên không nhận được việc làm trong vòng 45 ngày kể từ khi tốt nghiệp.
+              Đây là thông tin của trang nguồn và có thể thay đổi theo chính sách của CodeGym.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="section-padding course-section">
+    <div class="container">
+      <div class="section-heading text-center mb-5 text-white">
+        <span class="eyebrow eyebrow-light">KHÓA HỌC</span>
+        <h2 class="font-weight-bold">CGC Java & CGC PHP</h2>
+        <p class="mx-auto text-white-50">
+          Từ nền tảng lập trình đến dự án, kiểm thử, portfolio và phát triển nghề nghiệp.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card course-card h-100">
+            <div class="card-body p-4 p-lg-5">
+              <div class="course-icon bg-primary text-white"><i class="fab fa-java"></i></div>
+              <h3 class="font-weight-bold mt-4">CGC JAVA</h3>
+              <p class="text-muted">Lộ trình kỹ thuật với Java/OOP, Spring MVC, Database, REST và dự án nhóm.</p>
+              <div class="chip-list">
+                <span class="chip">Java</span>
+                <span class="chip">OOP</span>
+                <span class="chip">Spring MVC</span>
+                <span class="chip">Database</span>
+                <span class="chip">REST</span>
+                <span class="chip">Project</span>
+              </div>
+              <a href="#register" class="btn btn-primary btn-rounded mt-4 font-weight-bold">TƯ VẤN CGC JAVA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="card course-card h-100">
+            <div class="card-body p-4 p-lg-5">
+              <div class="course-icon bg-warning text-dark"><i class="fab fa-php"></i></div>
+              <h3 class="font-weight-bold mt-4">CGC PHP</h3>
+              <p class="text-muted">Lộ trình lập trình web hướng thực chiến, kết hợp kỹ năng làm việc và career development.</p>
+              <div class="chip-list">
+                <span class="chip">PHP</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">HTML</span>
+                <span class="chip">Git</span>
+                <span class="chip">Scrum</span>
+                <span class="chip">Portfolio</span>
+              </div>
+              <a href="#register" class="btn btn-warning btn-rounded mt-4 font-weight-bold">TƯ VẤN CGC PHP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-3">
+        <p class="text-white-50 mb-0">
+          Hệ thống học tập hỗ trợ gồm học trực tuyến, quản lý dự án, luyện code, hồ sơ năng lực và tài liệu học tập.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials / Projects -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <span class="eyebrow">DỰ ÁN HỌC VIÊN</span>
+          <h2 class="font-weight-bold">Học để tạo ra sản phẩm</h2>
+          <p class="text-muted">
+            Trang nguồn giới thiệu các sản phẩm của học viên như website bán điện thoại, trang blog
+            và website bán hàng thời trang. Landing Page này dùng mockup CSS làm placeholder để giữ trang nhẹ.
+          </p>
+
+          <div class="project-mockup z-depth-2">
+            <div class="mockup-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-sidebar"></div>
+              <div class="mockup-content">
+                <div class="mockup-title"></div>
+                <div class="mockup-row"></div>
+                <div class="mockup-row small"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card testimonial-card z-depth-2">
+            <div class="card-body p-4 p-lg-5">
+              <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+              <blockquote class="blockquote mb-4">
+                <p class="mb-0">
+                  “CodeGym là một ‘vũ khí’ rất lợi hại cho những người muốn chuyển ngành như mình.”
+                </p>
+              </blockquote>
+              <div class="media align-items-center">
+                <div class="avatar">HD</div>
+                <div class="media-body">
+                  <h5 class="font-weight-bold mb-1">Hoàng Đức Duy</h5>
+                  <p class="text-muted mb-0">Cựu học viên · Nexcert Vietnam Corp</p>
+                </div>
+              </div>
+              <small class="text-muted d-block mt-4">
+                Trích nội dung testimonial hiện có trên trang CodeGym Career.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Form -->
+  <section id="register" class="cta-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-white mb-5 mb-lg-0">
+          <span class="eyebrow eyebrow-light">BẠN MUỐN HỌC LẬP TRÌNH?</span>
+          <h2 class="display-5 font-weight-bold">Bắt đầu cuộc trò chuyện về lộ trình của bạn.</h2>
+          <p class="lead text-white-50">
+            Để lại thông tin để nhận tư vấn về chương trình CodeGym Career.
+          </p>
+          <div class="contact-card">
+            <div><i class="fas fa-phone mr-2"></i> 0989 534 458</div>
+            <div><i class="fas fa-map-marker-alt mr-2"></i> Hà Nội · Đà Nẵng</div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card form-card z-depth-4">
+            <div class="card-body p-4 p-lg-5">
+              <h3 class="font-weight-bold">Đăng ký nhận tư vấn</h3>
+              <p class="text-muted">Form demo cho bài thực hành, không gửi dữ liệu đến máy chủ.</p>
+
+              <form id="careerForm">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Họ và tên</label>
+                    <input type="text" class="form-control" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone">Điện thoại</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="status">Bạn hiện tại là?</label>
+                    <select class="browser-default custom-select" id="status" required>
+                      <option value="" selected disabled>Chọn một phương án</option>
+                      <option>Sinh viên CNTT</option>
+                      <option>Sinh viên ngành khác</option>
+                      <option>Đang đi làm</option>
+                      <option>Muốn chuyển ngành</option>
+                      <option>Khác</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="location">Tỉnh/thành bạn đang học tập/làm việc</label>
+                  <input type="text" class="form-control" id="location" required>
+                </div>
+
+                <button class="btn btn-primary btn-rounded btn-lg font-weight-bold px-4" type="submit">
+                  GỬI NGAY <i class="fas fa-paper-plane ml-2"></i>
+                </button>
+                <div id="formMessage" class="alert alert-success mt-3 d-none" role="alert">
+                  Đã nhận thông tin demo. Đây là form giao diện, chưa kết nối backend.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer elegant-color-dark pt-5" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="d-flex align-items-center mb-3">
+            <span class="brand-mark mr-2">CG</span>
+            <span class="font-weight-bold">CODEGYM CAREER</span>
+          </div>
+          <p class="text-white-50">
+            Landing Page thực hành HTML, CSS, Bootstrap và MDBootstrap theo phong cách Material Design.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <h5 class="font-weight-bold">Liên kết</h5>
+          <p class="mb-2"><a href="#about">Tổng quan chương trình</a></p>
+          <p class="mb-2"><a href="#path">Lộ trình</a></p>
+          <p class="mb-2"><a href="#courses">Khóa học</a></p>
+          <p class="mb-0"><a href="#register">Đăng ký tư vấn</a></p>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <h5 class="font-weight-bold">CodeGym Career</h5>
+          <p class="text-white-50 mb-1">Hotline: 0989 534 458</p>
+          <p class="text-white-50 mb-0">Hà Nội · Đà Nẵng</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3 mt-3">
+      © <span id="year"></span> CodeGym Material Landing Page Practice
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn btn-primary btn-floating z-depth-2" aria-label="Lên đầu trang">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
