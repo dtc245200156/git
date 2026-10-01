@@ -1,0 +1,3 @@
+# Layout Strategy
+
+MetricsHub được chia theo bản chất của từng component. **Flexbox** phù hợp cho Navbar vì đây là bố cục một chiều: các nhóm Logo, Menu và Action cần tự co giãn theo lượng nội dung. **CSS Grid** phù hợp cho Dashboard vì đây là bố cục hai chiều, nơi widget phải chiếm nhiều hàng/cột bằng `grid-column` và `grid-row` mà không cần “div soup”. **Bootstrap Grid** được dùng cho Pricing vì đây là thành phần chuẩn hóa theo lưới 12 cột; `col-12 col-md-4` cho phép 3 cột trên desktop và xếp chồng trên mobile mà không cần tự viết media query. Các công nghệ có thể kết hợp trong cùng component khi mỗi công nghệ giải quyết đúng một lớp của bài toán.
