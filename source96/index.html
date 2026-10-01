@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surface | Laptop, 2-in-1 PCs and Accessories</title>
+  <meta name="description" content="Bootstrap landing page inspired by the Microsoft Surface store.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://images.ctfassets.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-dark text-white small text-center py-2">
+    Free shipping on all Surface devices
+    <span class="mx-2">|</span>
+    Flexible payments available
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="#">
+        <span class="d-inline-grid" style="grid-template-columns:repeat(2,10px);gap:2px" aria-hidden="true">
+          <span class="bg-danger"></span><span class="bg-success"></span>
+          <span class="bg-primary"></span><span class="bg-warning"></span>
+        </span>
+        <span>Microsoft</span>
+        <span class="vr mx-1"></span>
+        <span>Surface</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#surfaceNav"
+              aria-controls="surfaceNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="surfaceNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="#products">Devices</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Why Surface</a></li>
+          <li class="nav-item"><a class="nav-link" href="#accessories">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Support</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <a class="link-dark text-decoration-none" href="#"><i class="bi bi-search"></i><span class="visually-hidden">Search</span></a>
+          <a class="link-dark text-decoration-none" href="#"><i class="bi bi-cart3"></i><span class="visually-hidden">Cart</span></a>
+          <a class="btn btn-primary btn-sm px-3" href="#products">Shop Surface</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-shell">
+      <div id="surfaceHero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#surfaceHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#surfaceHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#surfaceHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container py-5">
+              <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-5 order-2 order-lg-1">
+                  <span class="badge text-bg-primary rounded-pill mb-3">NEW</span>
+                  <h1 class="display-4 fw-semibold">Meet Surface</h1>
+                  <p class="lead mb-4">Power and portability designed to help you create, connect, and get more done.</p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <a class="btn btn-primary btn-lg px-4" href="#products">Shop devices</a>
+                    <a class="btn btn-outline-dark btn-lg px-4" href="#features">Explore Surface</a>
+                  </div>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                  <img class="img-fluid rounded-4 shadow-lg" src="https://images.ctfassets.net/jy9s7k22hbg4/6axAaUG7vwAgkKbYf1UYO0/a2916f43d81a1a647c9a03bac137c758/COM_100_Hero_Mobile_Multi_Poster-1080x1800.jpg" alt="Surface devices arranged together">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container py-5">
+              <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-5 order-2 order-lg-1">
+                  <span class="badge text-bg-light border rounded-pill mb-3">SURFACE PRO</span>
+                  <h2 class="display-5 fw-semibold">Power that adapts to how you work</h2>
+                  <p class="lead mb-4">A flexible 2-in-1 built for focused work, creativity, and life on the move.</p>
+                  <a class="btn btn-primary btn-lg px-4" href="#products">See Surface Pro</a>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                  <img class="img-fluid rounded-4 shadow-lg" src="https://images.ctfassets.net/jy9s7k22hbg4/0j00Tu86R8WHiyybR0Fz4/2d511bc7c882e4bd61cfc8f88826c23a/msft-COM_501_Surface_Pro_Dune-600x480-fy26.jpg" alt="Surface Pro with keyboard and kickstand">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="container py-5">
+              <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-5 order-2 order-lg-1">
+                  <span class="badge text-bg-dark rounded-pill mb-3">SURFACE LAPTOP</span>
+                  <h2 class="display-5 fw-semibold">Sustained power, beautifully refined</h2>
+                  <p class="lead mb-4">A clean, modern laptop with the performance and battery life for your everyday.</p>
+                  <a class="btn btn-dark btn-lg px-4" href="#products">See Surface Laptop</a>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                  <img class="img-fluid rounded-4 shadow-lg" src="https://images.ctfassets.net/jy9s7k22hbg4/6R6Gs5sI2K0wCumOevbTGZ/612c7dc5a4f2289baa60c7f8f3b39e2b/msft-COM_502_Surface_Laptop_Jade-600x480-fy26.jpg" alt="Surface Laptop">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#surfaceHero" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#surfaceHero" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="border-top border-bottom bg-light">
+      <div class="container py-4">
+        <div class="row row-cols-2 row-cols-md-4 g-4 text-center">
+          <div class="col">
+            <i class="bi bi-lightning-charge fs-2 d-block mb-2"></i>
+            <div class="fw-semibold">Fast performance</div>
+            <div class="small text-secondary">Ready for work and play</div>
+          </div>
+          <div class="col">
+            <i class="bi bi-battery-charging fs-2 d-block mb-2"></i>
+            <div class="fw-semibold">Long battery life</div>
+            <div class="small text-secondary">Stay productive on the move</div>
+          </div>
+          <div class="col">
+            <i class="bi bi-shield-check fs-2 d-block mb-2"></i>
+            <div class="fw-semibold">Built-in security</div>
+            <div class="small text-secondary">Protection from day one</div>
+          </div>
+          <div class="col">
+            <i class="bi bi-brush fs-2 d-block mb-2"></i>
+            <div class="fw-semibold">Made for creators</div>
+            <div class="small text-secondary">Designed for your ideas</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-5 py-lg-6">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+          <div>
+            <p class="text-primary fw-semibold text-uppercase mb-2">Find your Surface</p>
+            <h2 class="display-6 fw-semibold mb-0">Choose a device that fits your day</h2>
+          </div>
+          <a href="#" class="link-primary fw-semibold text-decoration-none">Compare Surface models <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="col">
+            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <img class="card-img-top product-image" src="https://images.ctfassets.net/jy9s7k22hbg4/0j00Tu86R8WHiyybR0Fz4/2d511bc7c882e4bd61cfc8f88826c23a/msft-COM_501_Surface_Pro_Dune-600x480-fy26.jpg" alt="Surface Pro">
+              <div class="card-body p-4">
+                <span class="badge rounded-pill text-bg-light border mb-2">2-in-1</span>
+                <h3 class="h4 fw-semibold">Surface Pro</h3>
+                <p class="text-secondary">Power that adapts to how you work, create, and connect.</p>
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                  <strong>From $849.99</strong>
+                  <a href="#" class="btn btn-primary">Shop now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <img class="card-img-top product-image" src="https://images.ctfassets.net/jy9s7k22hbg4/6R6Gs5sI2K0wCumOevbTGZ/612c7dc5a4f2289baa60c7f8f3b39e2b/msft-COM_502_Surface_Laptop_Jade-600x480-fy26.jpg" alt="Surface Laptop">
+              <div class="card-body p-4">
+                <span class="badge rounded-pill text-bg-light border mb-2">Laptop</span>
+                <h3 class="h4 fw-semibold">Surface Laptop</h3>
+                <p class="text-secondary">A refined everyday laptop with sustained performance and portability.</p>
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                  <strong>Explore models</strong>
+                  <a href="#" class="btn btn-outline-primary">Learn more</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col" id="accessories">
+            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+              <img class="card-img-top product-image" src="https://images.ctfassets.net/jy9s7k22hbg4/61PY3tLltNNy3YwKmn10JP/a5030e173ca74a25cdbe7ef448fdcf81/msft-COM_601_Lifestyle_A_Thumbnail-300x300-fy26.jpg" alt="Surface accessories and lifestyle">
+              <div class="card-body p-4">
+                <span class="badge rounded-pill text-bg-light border mb-2">Accessories</span>
+                <h3 class="h4 fw-semibold">Complete your setup</h3>
+                <p class="text-secondary">Pair your Surface with keyboards, mice, pens, and more.</p>
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                  <strong>Designed to work together</strong>
+                  <a href="#" class="btn btn-outline-primary">Browse</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="bg-dark text-white py-5 py-lg-6">
+      <div class="container">
+        <div class="row align-items-end g-4 mb-5">
+          <div class="col-lg-8">
+            <p class="text-info fw-semibold text-uppercase mb-2">Power your vision</p>
+            <h2 class="display-6 fw-semibold mb-3">Technology that gets out of your way</h2>
+            <p class="lead text-white-50 mb-0">Surface brings together performance, touch, AI features, thoughtful design, and the familiar Windows experience.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#products" class="btn btn-light px-4">Explore devices</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="p-4 p-lg-5 bg-white text-dark rounded-4 h-100">
+              <span class="badge text-bg-primary mb-3">01</span>
+              <h3 class="h2 fw-semibold">Effortlessly exceptional</h3>
+              <p class="text-secondary mb-4">Every edge, curve, and finish is designed around portability, durability, and a premium look and feel.</p>
+              <img class="img-fluid rounded-3" src="https://images.ctfassets.net/jy9s7k22hbg4/2zqT1aNmoX1cquzvWbTsp9/07baa036a66a154b182003cacd3753a0/COM_200_Craft_Mobile-A-15-1080x1800.jpg" alt="Close-up of a Surface device">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="row g-4 h-100">
+              <div class="col-12">
+                <div class="p-4 rounded-4 bg-primary-subtle text-dark h-100">
+                  <i class="bi bi-aspect-ratio fs-1"></i>
+                  <h3 class="h4 fw-semibold mt-3">A screen you'll savor</h3>
+                  <p class="mb-0">A 3:2 display gives you more vertical space for reading, writing, and multitasking.</p>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="p-4 rounded-4 bg-light text-dark h-100">
+                  <i class="bi bi-bag-check fs-1"></i>
+                  <h3 class="h4 fw-semibold mt-3">Easy to carry</h3>
+                  <p class="mb-0">Balanced designs keep you comfortable while working from home, school, or on the move.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 py-lg-6">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="text-primary fw-semibold text-uppercase mb-2">Made for makers</p>
+            <h2 class="display-6 fw-semibold">One device. Your whole workflow.</h2>
+            <p class="lead text-secondary">Use touch, keyboard, pen, and Windows apps together to move from ideas to finished work with less friction.</p>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <span class="badge text-bg-light border p-2">Work</span>
+              <span class="badge text-bg-light border p-2">Study</span>
+              <span class="badge text-bg-light border p-2">Create</span>
+              <span class="badge text-bg-light border p-2">Connect</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+              <img class="img-fluid lifestyle-image" src="https://images.ctfassets.net/jy9s7k22hbg4/61PY3tLltNNy3YwKmn10JP/a5030e173ca74a25cdbe7ef448fdcf81/msft-COM_601_Lifestyle_A_Thumbnail-300x300-fy26.jpg" alt="Person using a Surface device">
+              <div class="card-body p-4">
+                <h3 class="h4 fw-semibold">Built for your next idea</h3>
+                <p class="text-secondary mb-0">From a quick note to a full presentation, Surface is designed to move with the way you work.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-light py-5 py-lg-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="text-center mb-4">
+              <p class="text-primary fw-semibold text-uppercase mb-2">Questions</p>
+              <h2 class="display-6 fw-semibold">Surface FAQ</h2>
+            </div>
+
+            <div class="accordion accordion-flush bg-white rounded-4 shadow-sm overflow-hidden" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">
+                    What is Microsoft Surface?
+                  </button>
+                </h2>
+                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-secondary">Surface is Microsoft's family of laptops, 2-in-1 devices, and accessories built around Windows.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">
+                    Which Surface should I choose?
+                  </button>
+                </h2>
+                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-secondary">Start with how you work: choose a flexible 2-in-1 for touch and pen, or a traditional laptop for a focused keyboard-first workflow.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">
+                    Can I use Surface with accessories?
+                  </button>
+                </h2>
+                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-secondary">Yes. Surface accessories can extend your setup with input, connectivity, and productivity tools.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="h4">Surface</h2>
+          <p class="text-white-50 mb-0">A Bootstrap practice landing page inspired by the Microsoft Surface store experience.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3 class="h6">Explore</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#products">Devices</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#features">Features</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#accessories">Accessories</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3 class="h6">Support</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#faq">FAQ</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#">Contact</a></li>
+            <li class="mb-2"><a class="link-light text-decoration-none" href="#">Warranty</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h3 class="h6">Stay connected</h3>
+          <div class="d-flex gap-3 fs-5">
+            <a class="link-light" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a class="link-light" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="link-light" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a class="link-light" href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="small text-white-50 mb-0">Bootstrap 5.3.3 practice — Surface landing page.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
