@@ -1,0 +1,63 @@
+/* Minimal custom CSS: layout is intentionally delegated to Flexbox, Grid and Bootstrap. */
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #e9ecef;
+}
+
+.mosaic-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, minmax(180px, 1fr));
+  grid-template-areas:
+    "main sub1"
+    "main sub2";
+  gap: 15px;
+}
+
+.mosaic-main { grid-area: main; }
+.mosaic-sub-1 { grid-area: sub1; }
+.mosaic-sub-2 { grid-area: sub2; }
+
+.mosaic-item {
+  min-height: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: #dee2e6;
+}
+
+.mosaic-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  object-fit: cover;
+}
+
+.article-copy {
+  max-width: 78ch;
+}
+
+.card-img-top {
+  aspect-ratio: 7 / 4;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  .mosaic-gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-template-areas:
+      "main"
+      "sub1"
+      "sub2";
+  }
+
+  .mosaic-item img {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+}
