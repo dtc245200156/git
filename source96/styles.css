@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+}
+
+.hero-shell {
+  background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+}
+
+.hero-shell .carousel-item {
+  min-height: 640px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-shell img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.product-image {
+  height: 250px;
+  object-fit: cover;
+}
+
+.lifestyle-image {
+  width: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.py-lg-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .hero-shell .carousel-item {
+    min-height: auto;
+  }
+
+  .hero-shell .carousel-control-prev,
+  .hero-shell .carousel-control-next {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-shell h1,
+  .hero-shell .display-5 {
+    font-size: 2.35rem;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+}
