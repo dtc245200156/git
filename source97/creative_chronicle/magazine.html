@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CreativeChronicle — Article Detail</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+<header class="bg-dark text-white">
+  <div class="container py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <a class="navbar-brand text-white fw-bold mb-0" href="#">CreativeChronicle</a>
+      <nav class="d-flex flex-wrap gap-3" aria-label="Primary navigation">
+        <a class="link-light text-decoration-none" href="#story">Stories</a>
+        <a class="link-light text-decoration-none" href="#gallery">Gallery</a>
+        <a class="link-light text-decoration-none" href="#recommended">Recommended</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="story" class="container py-5">
+  <article class="bg-white rounded-4 shadow-sm p-4 p-lg-5">
+    <div class="row justify-content-center">
+      <div class="col-xl-10">
+        <p class="text-uppercase text-primary fw-semibold small mb-2">Art &amp; Design</p>
+        <h1 class="display-4 fw-bold mb-3">The Art of Seeing Ordinary Things Differently</h1>
+        <p class="lead text-secondary mb-4">Một hành trình ngắn qua nhiếp ảnh, màu sắc và những góc nhìn mới trong đời sống hàng ngày.</p>
+
+        <section class="author-section d-flex flex-wrap align-items-center justify-content-between gap-3 mb-5 pb-3 border-bottom" aria-label="Author information">
+          <div class="author-group d-flex align-items-center gap-3">
+            <div class="author-avatar d-flex align-items-center justify-content-center flex-shrink-0">
+              <i class="bi bi-person-fill fs-3 text-secondary" aria-hidden="true"></i>
+            </div>
+            <div>
+              <h2 class="h5 mb-1">Jane Doe</h2>
+              <p class="small text-secondary mb-0">Published on Oct 25, 2026 · 8 min read</p>
+            </div>
+          </div>
+
+          <div class="share-buttons d-flex flex-wrap align-items-center gap-2">
+            <span class="small fw-semibold me-1">Share</span>
+            <a class="btn btn-outline-primary btn-sm" href="#" aria-label="Share on Facebook">
+              <i class="bi bi-facebook" aria-hidden="true"></i>
+              <span class="d-none d-sm-inline ms-1">Facebook</span>
+            </a>
+            <a class="btn btn-outline-dark btn-sm" href="#" aria-label="Share on X">
+              <i class="bi bi-twitter-x" aria-hidden="true"></i>
+              <span class="d-none d-sm-inline ms-1">Tweet</span>
+            </a>
+            <a class="btn btn-outline-secondary btn-sm" href="#" aria-label="Copy article link">
+              <i class="bi bi-link-45deg" aria-hidden="true"></i>
+              <span class="d-none d-sm-inline ms-1">Link</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="gallery" class="mosaic-gallery mb-5" aria-label="Article photo gallery">
+          <figure class="mosaic-item mosaic-main">
+            <img src="https://picsum.photos/id/1015/1200/900" alt="Landscape with mountains and water">
+          </figure>
+          <figure class="mosaic-item mosaic-sub-1">
+            <img src="https://picsum.photos/id/1069/800/600" alt="Artistic architecture detail">
+          </figure>
+          <figure class="mosaic-item mosaic-sub-2">
+            <img src="https://picsum.photos/id/103/800/600" alt="Natural texture and foliage">
+          </figure>
+        </section>
+
+        <div class="article-copy">
+          <p>Đây là nội dung bài báo được trình bày như một bài viết của tạp chí nghệ thuật. Gallery phía trên giữ chiều cao theo chính nội dung của Grid, vì vậy khi viewport thu hẹp, các ảnh vẫn nằm trong luồng tài liệu và không che khuất phần văn bản.</p>
+          <p>Thay vì tính toán kích thước bằng pixel hoặc dùng kỹ thuật định vị cứng, bố cục được mô tả bằng hai chiều của CSS Grid. Ảnh chính giữ vị trí lớn ở bên trái, còn hai ảnh phụ xếp chồng ở bên phải.</p>
+
+          <blockquote class="border-start border-4 ps-4 py-2 my-4 text-secondary fs-5">
+            “Good design makes space for the content, then lets the content breathe.”
+          </blockquote>
+
+          <p>Ở màn hình nhỏ, Gallery chuyển thành một cột duy nhất. Khu vực Author cũng cho phép các nhóm thành phần xuống dòng tự nhiên bằng <code>flex-wrap</code>. Nhờ đó nội dung luôn có khoảng thở và không phụ thuộc vào một chiều cao cố định.</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="recommended" class="pt-5 mt-5 border-top">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-4">
+        <div>
+          <p class="text-uppercase text-primary fw-semibold small mb-1">More to explore</p>
+          <h2 class="h2 mb-0">Recommended Articles</h2>
+        </div>
+        <a class="link-primary text-decoration-none fw-semibold" href="#">View all <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm">
+            <img src="https://picsum.photos/id/1025/700/420" class="card-img-top" alt="Dog portrait artwork">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-light align-self-start mb-2">Photography</span>
+              <h3 class="h5">Portraits That Feel Like Stories</h3>
+              <p class="small text-secondary">Cách ánh sáng tạo ra cảm xúc trong một khung hình.</p>
+              <a href="#" class="mt-auto link-primary fw-semibold text-decoration-none">Read article →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm">
+            <img src="https://picsum.photos/id/1080/700/420" class="card-img-top" alt="Abstract blue composition">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-light align-self-start mb-2">Visual Art</span>
+              <h3 class="h5">When Color Becomes the Subject</h3>
+              <p class="small text-secondary">Khám phá cách bảng màu định hướng câu chuyện thị giác.</p>
+              <a href="#" class="mt-auto link-primary fw-semibold text-decoration-none">Read article →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm">
+            <img src="https://picsum.photos/id/1043/700/420" class="card-img-top" alt="City building and sky">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-light align-self-start mb-2">Architecture</span>
+              <h3 class="h5">Lines, Balance and Empty Space</h3>
+              <p class="small text-secondary">Đọc thành phố qua nhịp điệu hình học và khoảng trống.</p>
+              <a href="#" class="mt-auto link-primary fw-semibold text-decoration-none">Read article →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="card h-100 border-0 shadow-sm">
+            <img src="https://picsum.photos/id/1056/700/420" class="card-img-top" alt="Creative workspace">
+            <div class="card-body d-flex flex-column">
+              <span class="badge text-bg-light align-self-start mb-2">Studio</span>
+              <h3 class="h5">Inside a Working Artist's Space</h3>
+              <p class="small text-secondary">Một studio tốt hỗ trợ ý tưởng như thế nào.</p>
+              <a href="#" class="mt-auto link-primary fw-semibold text-decoration-none">Read article →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="bg-dark text-white py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 small">
+    <span>© 2026 CreativeChronicle</span>
+    <span class="text-white-50">Built with Flexbox, CSS Grid &amp; Bootstrap</span>
+  </div>
+</footer>
+
+</body>
+</html>
