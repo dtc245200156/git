@@ -1,0 +1,3 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 - Không tìm thấy</title></head>
+<body style="font-family:Arial;background:#f4f7fb;text-align:center;padding:100px 20px"><h1 style="font-size:64px;color:#c0392b;margin:0">404</h1><h2>Không tìm thấy sản phẩm</h2><p>Sản phẩm không tồn tại hoặc đã bị xóa.</p><a href="${pageContext.request.contextPath}/products">Quay lại danh sách</a></body></html>
