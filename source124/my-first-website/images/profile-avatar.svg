@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">Ảnh đại diện minh họa</title>
+  <desc id="desc">Hình minh họa một người với nền màu xanh nhạt, không phải ảnh cá nhân thật.</desc>
+  <rect width="220" height="220" rx="22" fill="#e7f0ff"/>
+  <circle cx="110" cy="79" r="42" fill="#f0c8a8"/>
+  <path d="M68 78c0-31 18-48 43-48 29 0 47 21 43 52l-9 12c-6-16-17-26-32-29-11 12-26 17-43 16z" fill="#3b4252"/>
+  <path d="M43 204c4-43 28-67 67-67s63 24 67 67" fill="#4c78c8"/>
+  <path d="M87 123c7 9 15 13 23 13s16-4 23-13l7 15c-8 11-18 17-30 17s-22-6-30-17z" fill="#e8b28e"/>
+  <circle cx="95" cy="83" r="3.5" fill="#30343b"/>
+  <circle cx="127" cy="83" r="3.5" fill="#30343b"/>
+  <path d="M99 103q11 9 22 0" fill="none" stroke="#9d5b50" stroke-width="3" stroke-linecap="round"/>
+</svg>
