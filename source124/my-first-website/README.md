@@ -1,21 +1,21 @@
 # My First Website — Bài tập HTML và CSS
 
-Dự án thực hành HTML gồm trang giới thiệu bản thân, Semantic HTML, thời khóa biểu, form liên hệ, công thức món ăn và External CSS.
+Dự án thực hành HTML/CSS gồm trang giới thiệu bản thân, Semantic HTML, thời khóa biểu, form liên hệ, công thức món ăn và phong cách portfolio bằng External CSS.
 
 ## Cấu trúc
 
-- `index.html`: trang giới thiệu, dùng Semantic HTML và liên kết đến `style.css`.
-- `style.css`: CSS bên ngoài cho nền, chữ, bố cục thẻ công thức, bảng, tiện ích `.highlight` và form phản hồi.
+- `index.html`: trang About Me dùng Semantic HTML và liên kết đến `style.css`.
+- `style.css`: stylesheet chung với quy tắc riêng cho trang About Me và trang công thức.
 - `timetable.html`: thời khóa biểu tuần.
 - `contact.html`: form liên hệ.
-- `recipe.html`: công thức phở gà, có `id="recipe-card"` và liên kết đến stylesheet.
+- `recipe.html`: công thức phở gà, bảng nguyên liệu và form đánh giá.
 - `images/profile-avatar.svg`: ảnh đại diện minh họa.
-- `images/pho-ga.svg`: hình minh họa bát phở gà.
-- `observations.md`: ghi chú và tóm tắt các bước thực hành.
+- `images/pho-ga.svg`: hình minh họa phở gà.
+- `observations.md`: ghi chú quá trình thực hành.
 
 ## Mở trang
 
-Mở thư mục dự án bằng VS Code và chạy trang cần xem bằng Live Server. Trang công thức `recipe.html` dùng chung `style.css`; hãy xác nhận tiêu đề có màu đỏ, nền trang xám rất nhạt, vùng công thức nền trắng và tên nguyên liệu chính được tô màu cam.
+Mở thư mục trong VS Code rồi chạy `index.html` hoặc `recipe.html` bằng Live Server. Trang About Me được làm đẹp thông qua các bộ chọn CSS nhắm đến `header`, `main`, `footer` hiện có; trang công thức giữ quy tắc `#recipe-card` riêng của nó.
 
 ## Lưu ý
 
