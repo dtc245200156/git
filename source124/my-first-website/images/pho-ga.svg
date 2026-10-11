@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Minh họa bát phở gà</title>
+  <desc id="desc">Một bát phở có nước dùng màu vàng nhạt, bánh phở, thịt gà, hành lá và rau thơm trên nền kem.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#fff7e7"/>
+      <stop offset="1" stop-color="#f4e4cb"/>
+    </linearGradient>
+    <linearGradient id="broth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6d98d"/>
+      <stop offset="1" stop-color="#d69a45"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#e9e4dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="26" fill="url(#background)"/>
+  <circle cx="320" cy="195" r="155" fill="#e9d7b5" opacity=".38"/>
+  <ellipse cx="320" cy="324" rx="205" ry="24" fill="#9a754f" opacity=".18"/>
+  <path d="M124 197 Q145 326 251 351 Q320 370 389 351 Q495 326 516 197 Z" fill="url(#bowl)" stroke="#d2c6b4" stroke-width="4"/>
+  <ellipse cx="320" cy="198" rx="201" ry="111" fill="#fbfaf4" stroke="#d2c6b4" stroke-width="5"/>
+  <ellipse cx="320" cy="197" rx="179" ry="91" fill="url(#broth)" stroke="#c88637" stroke-width="3"/>
+  <g fill="none" stroke="#f9e9b8" stroke-width="8" stroke-linecap="round">
+    <path d="M188 189 Q218 170 246 192 T303 191"/>
+    <path d="M225 225 Q257 208 288 229 T347 225"/>
+    <path d="M319 175 Q352 155 380 176 T434 176"/>
+    <path d="M361 230 Q391 213 421 230"/>
+    <path d="M181 214 Q205 203 222 216"/>
+  </g>
+  <g fill="#f3ddb1" stroke="#bc8c54" stroke-width="2">
+    <path d="M215 156 Q231 137 254 149 Q269 162 255 178 L227 183 Q208 177 215 156Z"/>
+    <path d="M278 139 Q294 122 319 135 Q331 145 319 164 L291 169 Q271 160 278 139Z"/>
+    <path d="M350 151 Q369 133 390 149 Q402 162 386 179 L361 180 Q342 170 350 151Z"/>
+    <path d="M299 206 Q319 189 344 202 Q358 218 340 235 L313 237 Q292 224 299 206Z"/>
+  </g>
+  <g fill="#5f8d43">
+    <ellipse cx="246" cy="202" rx="8" ry="14" transform="rotate(-35 246 202)"/>
+    <ellipse cx="374" cy="197" rx="8" ry="14" transform="rotate(33 374 197)"/>
+    <ellipse cx="338" cy="153" rx="7" ry="13" transform="rotate(56 338 153)"/>
+    <ellipse cx="281" cy="246" rx="8" ry="15" transform="rotate(-22 281 246)"/>
+    <ellipse cx="407" cy="221" rx="7" ry="13" transform="rotate(35 407 221)"/>
+  </g>
+  <g stroke="#39794a" stroke-width="5" stroke-linecap="round">
+    <path d="M245 234 l-16 -8"/>
+    <path d="M251 239 l-14 5"/>
+    <path d="M393 160 l12 -10"/>
+    <path d="M397 167 l15 -4"/>
+    <path d="M326 251 l17 -7"/>
+  </g>
+  <g fill="#f2b74d">
+    <circle cx="202" cy="185" r="4"/>
+    <circle cx="291" cy="180" r="4"/>
+    <circle cx="366" cy="211" r="4"/>
+    <circle cx="432" cy="192" r="4"/>
+    <circle cx="346" cy="192" r="4"/>
+  </g>
+  <g stroke="#fffdf4" stroke-width="5" stroke-linecap="round" opacity=".85">
+    <path d="M247 61 Q231 78 246 93"/>
+    <path d="M319 47 Q303 64 318 79"/>
+    <path d="M390 62 Q374 79 389 94"/>
+  </g>
+  <text x="320" y="394" fill="#6d5037" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">PHỞ GÀ TRUYỀN THỐNG</text>
+</svg>
