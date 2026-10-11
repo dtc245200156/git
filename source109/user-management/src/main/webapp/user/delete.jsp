@@ -1,0 +1,1 @@
+<%-- View: xác nhận xóa User. TODO: Hoàn thiện giao diện xác nhận. --%>
