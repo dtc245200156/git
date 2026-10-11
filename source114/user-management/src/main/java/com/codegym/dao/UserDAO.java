@@ -29,7 +29,7 @@ public class UserDAO implements IUserDAO {
                     + "salary DECIMAL(15, 2) NOT NULL,"
                     + "created_Date TIMESTAMP,"
                     + "PRIMARY KEY (id)"
-                    + ")";
+                    + ") ENGINE=InnoDB";
     private static final String SQL_DROP_EMPLOYEE_TABLE = "DROP TABLE IF EXISTS Employee";
 
     private static final String DEFAULT_URL =
