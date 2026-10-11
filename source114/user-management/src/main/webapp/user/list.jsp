@@ -22,6 +22,11 @@
                onclick="return confirm('Demo sẽ xóa và tạo lại bảng Employee để kiểm thử. Tiếp tục?')">
                 Chạy demo auto-commit
             </a>
+            <a class="btn btn-outline-success"
+               href="${pageContext.request.contextPath}/users?action=test-use-tran"
+               onclick="return confirm('Demo transaction sẽ xóa và tạo lại bảng Employee để kiểm thử. Tiếp tục?')">
+                Chạy demo transaction
+            </a>
         </div>
     </div>
 
