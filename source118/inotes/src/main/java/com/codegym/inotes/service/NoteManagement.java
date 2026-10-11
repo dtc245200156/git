@@ -44,19 +44,23 @@ public class NoteManagement {
     public Note addNote(String title, String content, int typeId) throws SQLException, IOException {
         Note note = new Note(title, content, typeId);
         validate(note);
-        strategy.save(note);
+        note.setStrategy(strategy);
+        note.save();
         note.setTypeName(getTypeName(typeId));
         return note;
     }
 
     public void saveNote(Note note) throws SQLException, IOException {
         validate(note);
-        strategy.save(note);
+        note.setStrategy(strategy);
+        note.save();
         note.setTypeName(getTypeName(note.getTypeId()));
     }
 
     public boolean deleteNote(int id) throws SQLException, IOException {
-        return strategy.delete(id);
+        Note note = new Note();
+        note.setStrategy(strategy);
+        return note.delete(id);
     }
 
     public Note findNoteById(int id) throws SQLException, IOException {
