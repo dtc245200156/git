@@ -162,9 +162,13 @@ public class NoteServlet extends HttpServlet {
             return;
         }
         if ("file".equalsIgnoreCase(requestedMode)) {
-            management.setStrategy(new NoteFileStrategy());
+            if (!"file".equals(management.getStorageMode())) {
+                management.setStrategy(new NoteFileStrategy());
+            }
         } else if ("db".equalsIgnoreCase(requestedMode)) {
-            management.setStrategy(new NoteDBStrategy());
+            if (!"db".equals(management.getStorageMode())) {
+                management.setStrategy(new NoteDBStrategy());
+            }
         } else {
             throw new IllegalArgumentException("Storage chỉ nhận db hoặc file.");
         }
