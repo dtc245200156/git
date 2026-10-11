@@ -43,6 +43,7 @@ public class NoteManagement {
 
     public Note addNote(String title, String content, int typeId) throws SQLException, IOException {
         Note note = new Note(title, content, typeId);
+        validate(note);
         strategy.save(note);
         note.setTypeName(getTypeName(typeId));
         return note;
