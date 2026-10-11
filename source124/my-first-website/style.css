@@ -117,3 +117,162 @@ td {
     padding: 6px;
   }
 }
+
+
+/* =========================================================
+   ABOUT ME PORTFOLIO
+   Chỉ định dạng các phần tử hiện có trong index.html;
+   không cần thay đổi cấu trúc HTML.
+   ========================================================= */
+
+/* --- Bố cục trang --- */
+body > header,
+body > main,
+body > footer {
+  width: 900px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px 40px;
+  background-color: #ffffff;
+}
+
+body > header {
+  margin-top: 20px;
+  padding-top: 40px;
+  text-align: center;
+  border-radius: 18px 18px 0 0;
+}
+
+body > main {
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+body > footer {
+  padding-top: 16px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e2e8f0;
+  border-radius: 0 0 18px 18px;
+}
+
+/* --- Ảnh và tên ở đầu trang --- */
+body > header h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1d3557;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+body > header img {
+  width: 220px;
+  height: 220px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 5px solid #dbeafe;
+  border-radius: 50%;
+}
+
+/* --- Các phần nội dung --- */
+body > main section {
+  padding: 14px 0;
+}
+
+body > main h2 {
+  color: #2563eb;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  border-bottom: 2px solid #bfdbfe;
+  padding-bottom: 8px;
+}
+
+body > main p {
+  line-height: 1.85;
+}
+
+body > main strong {
+  color: #b45309;
+}
+
+body > main section:not(:last-of-type) ul {
+  padding-left: 24px;
+}
+
+body > main section li {
+  margin-bottom: 8px;
+}
+
+/* --- Liên kết mạng xã hội --- */
+body > main a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+body > main a:hover {
+  color: #be123c;
+  text-decoration: underline;
+}
+
+body > main section:last-of-type ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+body > main section:last-of-type li {
+  display: inline-block;
+  margin: 4px 12px 4px 0;
+}
+
+body > main section:last-of-type a {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background-color: #eff6ff;
+}
+
+body > main section:last-of-type a:hover {
+  color: #ffffff;
+  background-color: #2563eb;
+  text-decoration: none;
+}
+
+/* --- Chân trang --- */
+body > footer p {
+  margin: 0;
+  color: #64748b;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* --- Điều chỉnh cho màn hình nhỏ --- */
+@media (max-width: 600px) {
+  body > header,
+  body > main,
+  body > footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  body > header {
+    margin-top: 8px;
+    padding-top: 28px;
+  }
+
+  body > header h1 {
+    font-size: 2.1rem;
+  }
+
+  body > header img {
+    width: 180px;
+    height: 180px;
+  }
+
+  body > main h2 {
+    font-size: 1.4rem;
+  }
+}
