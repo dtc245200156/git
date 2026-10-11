@@ -54,3 +54,14 @@
 4. Lưu cả hai tệp và mở `index.html` bằng Live Server để kiểm tra màu nền.
 5. Nếu nền không đổi, kiểm tra tên tệp, đường dẫn `href`, vị trí của hai tệp và lưu thay đổi.
 6. Quan sát: HTML giữ vai trò cấu trúc nội dung, còn CSS bên ngoài quản lý cách trình bày. Tách CSS ra tệp riêng giúp tái sử dụng và bảo trì quy tắc giao diện thuận tiện hơn.
+
+## Tóm tắt thực hành CSS cho trang công thức
+
+1. Liên kết stylesheet bên ngoài bằng cách thêm `<link rel="stylesheet" href="style.css">` trong phần `<head>` của `recipe.html`.
+2. Thêm `id="recipe-card"` vào thẻ `<article>` để có thể chọn vùng công thức bằng bộ chọn ID `#recipe-card`.
+3. Thiết lập font chữ, line-height, màu chữ và màu nền chung cho `body`.
+4. Định dạng `h1` và `h2` bằng bộ chọn phần tử, bao gồm font Georgia, màu đỏ đậm, kích thước chữ và đường gạch dưới tiêu đề phụ.
+5. Thêm `class="highlight"` cho tên nguyên liệu chính để thử bộ chọn class `.highlight`.
+6. Dùng CSS định dạng bảng: `width: 100%`, căn trái tiêu đề cột, màu nền cho `th` và khoảng đệm cho `th`/ `td`.
+7. Mở `recipe.html` bằng Live Server, kiểm tra bố cục, font, màu sắc và bảng. Phần CSS có bổ sung giới hạn chiều rộng linh hoạt để nội dung không tràn trên màn hình nhỏ.
+8. Quan sát: bộ chọn phần tử áp dụng theo tên thẻ, bộ chọn ID bắt đầu bằng `#`, và bộ chọn class bắt đầu bằng `.`. Tách quy tắc vào file CSS giúp trình bày và cấu trúc HTML được quản lý riêng.
