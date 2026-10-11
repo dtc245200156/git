@@ -1,20 +1,23 @@
-# My First Website — About Me, Thời khóa biểu và Liên hệ
+# My First Website — Bài tập HTML tổng hợp
 
-Dự án thực hành HTML bao gồm trang giới thiệu bản thân dùng Semantic HTML, bảng thời khóa biểu và form liên hệ.
+Dự án thực hành HTML gồm trang giới thiệu bản thân, Semantic HTML, thời khóa biểu, form liên hệ và bài công thức món ăn.
 
 ## Cấu trúc
 
 - `index.html`: trang giới thiệu, có `header`, `main`, `section` và `footer`.
-- `timetable.html`: thời khóa biểu từ thứ Hai đến thứ Sáu, sử dụng `table`, `thead`, `tbody`, `tr`, `th` và `td`.
-- `contact.html`: form liên hệ dùng `form`, `label`, `input`, `textarea` và `button`.
-- `images/profile-avatar.svg`: ảnh đại diện minh họa.
-- `observations.md`: ghi chú thực hành và tóm tắt các bước của từng bài.
+- `timetable.html`: thời khóa biểu tuần với `table`, `thead`, `tbody`, `tr`, `th`, `td`.
+- `contact.html`: form liên hệ với `form`, `label`, `input`, `textarea`, `button`.
+- `recipe.html`: trang công thức phở gà sử dụng `article`, `section`, bảng nguyên liệu, danh sách bước nấu và form đánh giá.
+- `images/profile-avatar.svg`: ảnh đại diện minh họa cho trang About Me.
+- `images/pho-ga.svg`: hình minh họa bát phở gà.
+- `observations.md`: ghi chú và tóm tắt các bước thực hành.
 
 ## Mở trang
 
-Mở thư mục dự án bằng VS Code và chạy `index.html`, `timetable.html` hoặc `contact.html` với Live Server. Có thể mở trực tiếp các tệp HTML bằng trình duyệt.
+Mở thư mục dự án bằng VS Code và chạy trang HTML cần xem bằng Live Server, hoặc mở trực tiếp tệp bằng trình duyệt.
 
 ## Lưu ý
 
-- Trang About Me hiện sử dụng tên và ảnh minh họa. Hãy thay bằng tên và ảnh cá nhân thật, cập nhật mô tả `alt`, và thay các liên kết mạng xã hội mẫu bằng URL hồ sơ thực tế.
-- Form liên hệ dùng `action="#"` để minh họa giao diện. Form chưa lưu hay gửi email thực sự vì cần có backend hoặc dịch vụ xử lý form.
+- Trang About Me sử dụng tên và ảnh minh họa; hãy thay bằng thông tin cá nhân thật trước khi chia sẻ.
+- Các form trong bài tập là giao diện HTML mẫu. Chúng chưa gửi email, lưu bình luận hoặc đánh giá thực sự vì chưa có backend xử lý.
+- Hình phở gà là ảnh minh họa SVG tự tạo và được lưu trong thư mục `images`.
