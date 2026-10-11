@@ -1,4 +1,7 @@
-CREATE DATABASE IF NOT EXISTS demo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS demo
+    CHARACTER SET utf8mb4
+    COLLATE utf8mb4_unicode_ci;
+
 USE demo;
 
 CREATE TABLE IF NOT EXISTS users (
@@ -10,9 +13,18 @@ CREATE TABLE IF NOT EXISTS users (
     UNIQUE KEY uk_users_email (email)
 );
 
-INSERT INTO users (name, email, country) VALUES
-    ('Minh', 'minh@codegym.vn', 'Viet Nam'),
-    ('Kante', 'kante@che.uk', 'Kenia'),
-    ('Lan', 'lan@example.com', 'Viet Nam'),
-    ('Alex', 'alex@example.com', 'United Kingdom')
-ON DUPLICATE KEY UPDATE email = VALUES(email);
+INSERT INTO users (name, email, country)
+SELECT 'Minh', 'minh@codegym.vn', 'Viet Nam'
+WHERE NOT EXISTS (SELECT 1 FROM users WHERE email = 'minh@codegym.vn');
+
+INSERT INTO users (name, email, country)
+SELECT 'Kante', 'kante@che.uk', 'Kenia'
+WHERE NOT EXISTS (SELECT 1 FROM users WHERE email = 'kante@che.uk');
+
+INSERT INTO users (name, email, country)
+SELECT 'Lan', 'lan@example.com', 'Viet Nam'
+WHERE NOT EXISTS (SELECT 1 FROM users WHERE email = 'lan@example.com');
+
+INSERT INTO users (name, email, country)
+SELECT 'Alex', 'alex@example.com', 'United Kingdom'
+WHERE NOT EXISTS (SELECT 1 FROM users WHERE email = 'alex@example.com');
