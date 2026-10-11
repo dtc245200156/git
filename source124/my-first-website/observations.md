@@ -65,3 +65,14 @@
 6. Dùng CSS định dạng bảng: `width: 100%`, căn trái tiêu đề cột, màu nền cho `th` và khoảng đệm cho `th`/ `td`.
 7. Mở `recipe.html` bằng Live Server, kiểm tra bố cục, font, màu sắc và bảng. Phần CSS có bổ sung giới hạn chiều rộng linh hoạt để nội dung không tràn trên màn hình nhỏ.
 8. Quan sát: bộ chọn phần tử áp dụng theo tên thẻ, bộ chọn ID bắt đầu bằng `#`, và bộ chọn class bắt đầu bằng `.`. Tách quy tắc vào file CSS giúp trình bày và cấu trúc HTML được quản lý riêng.
+
+## Tóm tắt thực hành tạo phong cách Portfolio bằng CSS
+
+1. Mở `index.html` và `style.css`, xác nhận HTML đã liên kết stylesheet bằng `<link rel="stylesheet" href="style.css">`.
+2. Dùng bộ chọn `body` để thiết lập font chữ, màu chữ và màu nền chung.
+3. Dùng các bộ chọn cho phần tử Semantic HTML hiện có (`body > header`, `body > main`, `body > footer`) để căn giữa và tạo vùng nội dung nền trắng, không cần thay đổi cấu trúc HTML.
+4. Căn giữa phần đầu trang; đổi kích thước và màu `h1`; dùng `border-radius: 50%` để làm ảnh đại diện tròn.
+5. Định dạng `h2` bằng màu nhấn và đường gạch dưới; tăng `line-height` cho đoạn văn và đổi màu chữ `strong`.
+6. Định dạng các liên kết với màu riêng, bỏ gạch chân mặc định, thêm hiệu ứng `:hover`; bỏ dấu đầu dòng cho danh sách liên kết ở phần cuối của nội dung.
+7. Chia CSS thành các khu vực có ghi chú: bố cục, đầu trang, nội dung, liên kết, chân trang và màn hình nhỏ.
+8. Mở `index.html` bằng Live Server và quan sát: CSS có thể thay đổi đáng kể giao diện mà vẫn giữ nguyên cấu trúc HTML; các quy tắc cũ cho trang công thức vẫn được giữ lại trong cùng file stylesheet.
