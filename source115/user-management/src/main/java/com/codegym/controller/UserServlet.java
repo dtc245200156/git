@@ -63,6 +63,7 @@ public class UserServlet extends HttpServlet {
                     redirectWithMessage(request, response, "Đã thêm User.");
                 }
                 case "edit" -> {
+                    // updateUser() is backed by the MySQL Stored Procedure update_user.
                     User user = readUser(request);
                     user.setId(parseId(request.getParameter("id")));
                     if (userDAO.updateUser(user)) {
@@ -72,6 +73,7 @@ public class UserServlet extends HttpServlet {
                     }
                 }
                 case "delete" -> {
+                    // deleteUser() is backed by the MySQL Stored Procedure delete_user.
                     int id = parseId(request.getParameter("id"));
                     if (userDAO.deleteUser(id)) {
                         redirectWithMessage(request, response, "Đã xóa User.");
@@ -116,6 +118,7 @@ public class UserServlet extends HttpServlet {
 
         request.setAttribute("country", country);
         request.setAttribute("sortOrder", sortOrder);
+        // selectUsers() calls get_all_users through CallableStatement.
         request.setAttribute("users", userDAO.selectUsers(country, sortOrder));
         request.getRequestDispatcher("/user/list.jsp").forward(request, response);
     }
