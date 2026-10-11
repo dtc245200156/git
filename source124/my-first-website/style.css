@@ -1,3 +1,119 @@
+/* --- Phong cách chung --- */
 body {
-  background-color: #f0f8ff; /* AliceBlue - xanh nhạt */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* --- Bố cục chính --- */
+#recipe-card {
+  box-sizing: border-box;
+  width: 800px;
+  max-width: 100%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+/* Giữ hình ảnh vừa khung nội dung trên màn hình nhỏ */
+#recipe-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto;
+}
+
+/* --- Chữ viết (Typography) --- */
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #c0392b;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 5px;
+}
+
+/* --- Bảng biểu --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  background-color: #ecf0f1;
+  padding: 8px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* --- Tiện ích --- */
+.highlight {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* --- Form phản hồi --- */
+#recipe-feedback {
+  width: 800px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 24px auto 40px;
+}
+
+#recipe-feedback input[type="text"],
+#recipe-feedback textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+}
+
+#recipe-feedback fieldset {
+  margin: 16px 0;
+}
+
+#recipe-feedback button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  #recipe-card {
+    margin-top: 12px;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
 }
