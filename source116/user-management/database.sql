@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS users (
     country VARCHAR(120),
     PRIMARY KEY (id),
     UNIQUE KEY uk_users_email (email)
-);
+) ENGINE=InnoDB;
 
 INSERT INTO users (name, email, country)
 SELECT 'Minh', 'minh@codegym.vn', 'Viet Nam'
