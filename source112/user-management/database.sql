@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS user_permission (
     permission_id INT NOT NULL,
     PRIMARY KEY (user_id, permission_id),
     CONSTRAINT fk_user_permission_user
-        FOREIGN KEY (user_id) REFERENCES users(id),
+        FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     CONSTRAINT fk_user_permission_permission
         FOREIGN KEY (permission_id) REFERENCES permission(id)
 ) ENGINE=InnoDB;
