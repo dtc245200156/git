@@ -252,6 +252,10 @@ public class UserDAO implements IUserDAO {
     @Override
     public void insertUpdateWithoutTransaction() {
         try (Connection connection = getConnection()) {
+            // Make the intended behavior explicit: each successful SQL statement
+            // is committed automatically; this demo does not call commit/rollback.
+            connection.setAutoCommit(true);
+
             // Keep DDL separate from prepared DML statements so the table can
             // be dropped/recreated before preparing statements against it.
             try (java.sql.Statement statement = connection.createStatement()) {
