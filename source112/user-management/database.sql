@@ -29,8 +29,7 @@ INSERT INTO users (name, email, country)
 SELECT 'Alex', 'alex@example.com', 'United Kingdom'
 WHERE NOT EXISTS (SELECT 1 FROM users WHERE email = 'alex@example.com');
 
--- Ensure the User table uses a transactional storage engine.
-ALTER TABLE users ENGINE=InnoDB;
+-- MySQL 8 uses InnoDB by default; all related tables should use a transactional engine.
 
 -- Permission master table.
 CREATE TABLE IF NOT EXISTS permission (
