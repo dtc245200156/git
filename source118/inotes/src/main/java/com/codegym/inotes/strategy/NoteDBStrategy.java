@@ -54,8 +54,19 @@ public class NoteDBStrategy implements NoteStrategy {
                  PreparedStatement statement = connection.prepareStatement(sql)) {
                 bindNote(statement, note);
                 statement.setInt(4, note.getId());
-                if (statement.executeUpdate() == 0) {
-                    throw new SQLException("Không tìm thấy ghi chú có ID " + note.getId());
+                int affectedRows = statement.executeUpdate();
+                if (affectedRows == 0) {
+                    // MySQL may report zero changed rows when the submitted values
+                    // are identical to existing values, so distinguish that from a missing ID.
+                    try (PreparedStatement check = connection.prepareStatement(
+                            "SELECT 1 FROM notes WHERE id = ?")) {
+                        check.setInt(1, note.getId());
+                        try (ResultSet existing = check.executeQuery()) {
+                            if (!existing.next()) {
+                                throw new SQLException("Không tìm thấy ghi chú có ID " + note.getId());
+                            }
+                        }
+                    }
                 }
             }
         }
