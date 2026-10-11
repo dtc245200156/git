@@ -25,3 +25,13 @@
 4. Dùng `<tbody>` để chứa các hàng dữ liệu; `<th scope="row">` ghi tên buổi học và `<td>` ghi hoạt động trong từng ngày.
 5. Lưu tệp và mở bằng Live Server để kiểm tra số hàng, số cột và nội dung.
 6. Quan sát: `<thead>` và `<tbody>` giúp phân biệt phần tiêu đề với phần dữ liệu; bảng hiện chưa có đường viền hay màu sắc vì bài tập tập trung vào cấu trúc HTML, chưa áp dụng CSS.
+
+## Tóm tắt thực hành tạo form liên hệ
+
+1. Tạo tệp `contact.html` và khai báo cấu trúc HTML5, `lang="vi"`, `UTF-8` và tiêu đề trang.
+2. Thêm tiêu đề `h1`, đoạn giới thiệu, rồi dùng `<form action="#" method="post">` bao bọc các trường nhập.
+3. Tạo trường họ tên với `<input type="text">`, trường email với `<input type="email">` và vùng lời nhắn với `<textarea>`.
+4. Liên kết mỗi `<label for="...">` với `id` tương ứng của trường nhập để người dùng có thể bấm vào nhãn và tập trung vào ô nhập.
+5. Thêm nút `<button type="submit">` để gửi form.
+6. Mở bằng Live Server và thử bấm nhãn, gửi form trống và nhập email sai định dạng để quan sát hành vi kiểm tra cơ bản của trình duyệt.
+7. Quan sát: `type="email"` hỗ trợ kiểm tra định dạng email ở phía trình duyệt; form hiện tại chỉ là giao diện, chưa gửi dữ liệu đến dịch vụ hoặc máy chủ vì chưa có backend xử lý.
