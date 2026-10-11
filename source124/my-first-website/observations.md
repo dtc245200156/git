@@ -35,3 +35,13 @@
 5. Thêm nút `<button type="submit">` để gửi form.
 6. Mở bằng Live Server và thử bấm nhãn, gửi form trống và nhập email sai định dạng để quan sát hành vi kiểm tra cơ bản của trình duyệt.
 7. Quan sát: `type="email"` hỗ trợ kiểm tra định dạng email ở phía trình duyệt; form hiện tại chỉ là giao diện, chưa gửi dữ liệu đến dịch vụ hoặc máy chủ vì chưa có backend xử lý.
+
+## Tóm tắt thực hành dự án công thức món ăn
+
+1. Tạo tệp `recipe.html` với cấu trúc HTML5, `lang="vi"`, mã hóa UTF-8 và tiêu đề phù hợp.
+2. Đặt toàn bộ bài công thức trong `<article>`; dùng `<header>` bên trong article để chứa tên món ăn, mô tả và hình ảnh có `alt`.
+3. Tạo section “Nguyên liệu” và trình bày nguyên liệu bằng bảng `<table>`, tách tiêu đề và dữ liệu bằng `<thead>` và `<tbody>`.
+4. Tạo section “Các bước thực hiện” với danh sách có thứ tự `<ol>`, mỗi bước là một `<li>`.
+5. Đặt mẹo nấu ăn trong `<footer>` ở cuối article.
+6. Tạo form phản hồi bên dưới article, gồm tên, nhóm radio đánh giá từ 1 đến 5 sao, bình luận và nút gửi. Mỗi input/textarea đều có label liên kết đúng qua `for` và `id`.
+7. Mở bằng Live Server để kiểm tra cấu trúc bảng, thứ tự bước nấu và khả năng chọn một mức đánh giá. Form dùng `action="#"` nên chỉ minh họa giao diện, chưa lưu phản hồi lên máy chủ.
