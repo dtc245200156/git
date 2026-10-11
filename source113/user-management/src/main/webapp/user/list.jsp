@@ -15,7 +15,14 @@
             <h1 class="h2 mb-1">Quản lý User</h1>
             <p class="text-secondary mb-0">Tìm kiếm theo quốc gia và sắp xếp theo tên.</p>
         </div>
-        <a class="btn btn-primary" href="${pageContext.request.contextPath}/users?action=create">+ Thêm User</a>
+        <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/users?action=create">+ Thêm User</a>
+            <a class="btn btn-outline-warning"
+               href="${pageContext.request.contextPath}/users?action=test-without-tran"
+               onclick="return confirm('Demo sẽ xóa và tạo lại bảng Employee để kiểm thử. Tiếp tục?')">
+                Chạy demo auto-commit
+            </a>
+        </div>
     </div>
 
     <c:if test="${not empty param.message}">
