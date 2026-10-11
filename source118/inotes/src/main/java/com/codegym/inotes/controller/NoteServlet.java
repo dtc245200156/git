@@ -31,10 +31,9 @@ public class NoteServlet extends HttpServlet {
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         NoteManagement management = getManagement(request);
-        applyRequestedStrategy(request, management);
-
         String action = valueOrEmpty(request.getParameter("action"));
         try {
+            applyRequestedStrategy(request, management);
             switch (action) {
                 case "create" -> showForm(request, response, management, new Note(), false);
                 case "edit" -> {
@@ -65,10 +64,9 @@ public class NoteServlet extends HttpServlet {
             throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
         NoteManagement management = getManagement(request);
-        applyRequestedStrategy(request, management);
-
         String action = valueOrEmpty(request.getParameter("action"));
         try {
+            applyRequestedStrategy(request, management);
             switch (action) {
                 case "save" -> {
                     int id = parseOptionalId(request.getParameter("id"));
