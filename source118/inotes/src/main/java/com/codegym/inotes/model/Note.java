@@ -14,6 +14,7 @@ public class Note {
     private String content;
     private int typeId;
     private String typeName;
+    private transient NoteStrategy strategy;
 
     public Note() {
     }
@@ -29,12 +30,32 @@ public class Note {
         this(0, title, content, typeId);
     }
 
-    public void save(NoteStrategy strategy) throws SQLException, IOException {
+    public void setStrategy(NoteStrategy strategy) {
+        this.strategy = strategy;
+    }
+
+    public void save() throws SQLException, IOException {
+        if (strategy == null) {
+            throw new IllegalStateException("Chưa cấu hình chiến lược lưu trữ cho Note.");
+        }
         strategy.save(this);
     }
 
-    public boolean delete(int noteId, NoteStrategy strategy) throws SQLException, IOException {
+    public void save(NoteStrategy strategy) throws SQLException, IOException {
+        setStrategy(strategy);
+        save();
+    }
+
+    public boolean delete(int noteId) throws SQLException, IOException {
+        if (strategy == null) {
+            throw new IllegalStateException("Chưa cấu hình chiến lược lưu trữ cho Note.");
+        }
         return strategy.delete(noteId);
+    }
+
+    public boolean delete(int noteId, NoteStrategy strategy) throws SQLException, IOException {
+        setStrategy(strategy);
+        return delete(noteId);
     }
 
     public int getId() {
