@@ -45,3 +45,12 @@
 5. Đặt mẹo nấu ăn trong `<footer>` ở cuối article.
 6. Tạo form phản hồi bên dưới article, gồm tên, nhóm radio đánh giá từ 1 đến 5 sao, bình luận và nút gửi. Mỗi input/textarea đều có label liên kết đúng qua `for` và `id`.
 7. Mở bằng Live Server để kiểm tra cấu trúc bảng, thứ tự bước nấu và khả năng chọn một mức đánh giá. Form dùng `action="#"` nên chỉ minh họa giao diện, chưa lưu phản hồi lên máy chủ.
+
+## Tóm tắt thực hành liên kết External CSS
+
+1. Tạo tệp `style.css` nằm cùng cấp với `index.html`.
+2. Viết quy tắc `body { background-color: #f0f8ff; }` để thay đổi nền trang sang màu AliceBlue.
+3. Thêm `<link rel="stylesheet" href="style.css">` vào phần `<head>` của `index.html`.
+4. Lưu cả hai tệp và mở `index.html` bằng Live Server để kiểm tra màu nền.
+5. Nếu nền không đổi, kiểm tra tên tệp, đường dẫn `href`, vị trí của hai tệp và lưu thay đổi.
+6. Quan sát: HTML giữ vai trò cấu trúc nội dung, còn CSS bên ngoài quản lý cách trình bày. Tách CSS ra tệp riêng giúp tái sử dụng và bảo trì quy tắc giao diện thuận tiện hơn.
