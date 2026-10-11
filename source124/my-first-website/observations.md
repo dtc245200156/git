@@ -16,3 +16,12 @@
 - `<footer>` chứa thông tin bản quyền ở cuối trang.
 - Sau khi thêm các thẻ ngữ nghĩa mà không thay đổi nội dung hiển thị, giao diện thông thường gần như không đổi vì các thẻ này chủ yếu mô tả ý nghĩa và cấu trúc cho trình duyệt, công cụ tìm kiếm và công nghệ hỗ trợ.
 - Mã nguồn dễ đọc và dễ bảo trì hơn vì các khu vực đầu trang, nội dung chính, từng phần và chân trang được phân biệt rõ.
+
+## Tóm tắt thực hành tạo thời khóa biểu
+
+1. Tạo tệp `timetable.html` và khai báo cấu trúc HTML5 với `lang="vi"`, bảng mã UTF-8 và tiêu đề trang.
+2. Tạo `<table>` để chứa bảng thời khóa biểu.
+3. Dùng `<thead>` và một hàng `<tr>` để tạo tiêu đề các cột: thời gian và các ngày từ thứ Hai đến thứ Sáu.
+4. Dùng `<tbody>` để chứa các hàng dữ liệu; `<th scope="row">` ghi tên buổi học và `<td>` ghi hoạt động trong từng ngày.
+5. Lưu tệp và mở bằng Live Server để kiểm tra số hàng, số cột và nội dung.
+6. Quan sát: `<thead>` và `<tbody>` giúp phân biệt phần tiêu đề với phần dữ liệu; bảng hiện chưa có đường viền hay màu sắc vì bài tập tập trung vào cấu trúc HTML, chưa áp dụng CSS.
