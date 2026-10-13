@@ -76,3 +76,13 @@
 6. Định dạng các liên kết với màu riêng, bỏ gạch chân mặc định, thêm hiệu ứng `:hover`; bỏ dấu đầu dòng cho danh sách liên kết ở phần cuối của nội dung.
 7. Chia CSS thành các khu vực có ghi chú: bố cục, đầu trang, nội dung, liên kết, chân trang và màn hình nhỏ.
 8. Mở `index.html` bằng Live Server và quan sát: CSS có thể thay đổi đáng kể giao diện mà vẫn giữ nguyên cấu trúc HTML; các quy tắc cũ cho trang công thức vẫn được giữ lại trong cùng file stylesheet.
+
+## Tóm tắt thực hành Box Model
+
+1. Tạo tệp `box-model.html`, khai báo HTML5, đặt `lang="vi"`, tiêu đề “Thí nghiệm Box Model” và liên kết với `style.css`.
+2. Thêm hai `<div>`: cả hai dùng class chung `.box`, rồi dùng `.box-1` và `.box-2` để đặt màu nền khác nhau.
+3. Trong CSS, đặt kích thước content bằng `width: 250px` và `height: 150px`.
+4. Thêm `padding: 20px` để tạo khoảng đệm bên trong; thêm `border: 10px solid #333` để tạo viền; thêm `margin: 40px` để tạo khoảng cách bên ngoài.
+5. Mở `box-model.html` bằng Live Server và quan sát từng thay đổi. Với mặc định `box-sizing: content-box`, phần hộp tính cả padding và border có kích thước 310 × 210 px; margin nằm ngoài kích thước đó và tạo khoảng cách xung quanh.
+6. Thử thêm `box-sizing: border-box` cho `.box`: khi đó kích thước khai báo 250 × 150 px đã bao gồm padding và border, nên phần content nhỏ lại.
+7. Quan sát: `padding` ở bên trong border, `border` bao quanh content và padding, còn `margin` nằm ngoài border. Các quy tắc Box Model được thêm vào stylesheet dùng chung mà vẫn giữ lại style cho những trang khác.
