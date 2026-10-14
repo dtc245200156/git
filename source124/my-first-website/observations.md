@@ -86,3 +86,13 @@
 5. Mở `box-model.html` bằng Live Server và quan sát từng thay đổi. Với mặc định `box-sizing: content-box`, phần hộp tính cả padding và border có kích thước 310 × 210 px; margin nằm ngoài kích thước đó và tạo khoảng cách xung quanh.
 6. Thử thêm `box-sizing: border-box` cho `.box`: khi đó kích thước khai báo 250 × 150 px đã bao gồm padding và border, nên phần content nhỏ lại.
 7. Quan sát: `padding` ở bên trong border, `border` bao quanh content và padding, còn `margin` nằm ngoài border. Các quy tắc Box Model được thêm vào stylesheet dùng chung mà vẫn giữ lại style cho những trang khác.
+
+## Tóm tắt bài cuối: Đóng gói và xuất bản portfolio
+
+1. Kiểm tra trang `index.html` đã liên kết đến `style.css`, ảnh nằm trong `images/` và các đường dẫn tương đối hoạt động.
+2. Đóng gói những tệp cần thiết cho trang tĩnh vào thư mục `portfolio-project`: `index.html`, `style.css` và `images/profile-avatar.svg`.
+3. Nén thư mục thành file ZIP để dễ chuyển tải; trước khi sử dụng Netlify Drop, giải nén ZIP để có thư mục dự án.
+4. Mở `https://app.netlify.com/drop` và kéo thư mục `portfolio-project` vào khu vực Deploy.
+5. Khi Netlify hoàn tất, sao chép URL công khai có đuôi `.netlify.app` để chia sẻ hoặc đưa vào CV.
+6. Quan sát: file nằm trên GitHub là mã nguồn; file ZIP giúp đóng gói dự án; Netlify tạo một bản triển khai công khai khi người dùng thực hiện thao tác deploy.
+7. Trước khi chia sẻ, thay tên, ảnh và liên kết mẫu. Không gửi form hay dữ liệu cá nhân nhạy cảm vì các form hiện chỉ là giao diện HTML chưa có backend.
